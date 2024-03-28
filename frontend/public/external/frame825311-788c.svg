@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width='418' height='178' viewBox='0 0 418 178' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path d='M0.177734 0.491211H417.047' stroke='url(#paint0_radial_53_11084)' stroke-width='0.98087'/>
+<path d='M0.177734 35.8027H417.047' stroke='url(#paint1_radial_53_11084)' stroke-width='0.98087'/>
+<path d='M0.177734 71.1143H417.047' stroke='url(#paint2_radial_53_11084)' stroke-width='0.98087'/>
+<path d='M0.177734 106.425H417.047' stroke='url(#paint3_radial_53_11084)' stroke-width='0.98087'/>
+<path d='M0.177734 141.736H417.047' stroke='url(#paint4_radial_53_11084)' stroke-width='0.98087'/>
+<path d='M0.177734 177.048H417.047' stroke='url(#paint5_radial_53_11084)' stroke-width='0.98087'/>
+<defs>
+<radialGradient id='paint0_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 0.991211) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+<radialGradient id='paint1_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 36.3027) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+<radialGradient id='paint2_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 71.6143) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+<radialGradient id='paint3_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 106.925) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+<radialGradient id='paint4_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 142.236) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+<radialGradient id='paint5_radial_53_11084' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(208.613 177.548) rotate(90) scale(0.5 208.435)'>
+<stop offset='0.9999' stop-color='#D1D5DB'/>
+<stop offset='1' stop-color='#D1D5DB' stop-opacity='0'/>
+</radialGradient>
+</defs>
+</svg>

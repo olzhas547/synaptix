@@ -1,0 +1,1065 @@
+.app-component-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.app-component-group237639 {
+  width: 1218px;
+  height: 313.0640563964844px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-lessons {
+  top: 0px;
+  left: 0px;
+  width: 1218px;
+  height: 313.0640563964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-frame4 {
+  top: 0.000003051757857974735px;
+  left: 942.046875px;
+  width: 275.953125px;
+  height: 313.0640563964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.app-component-text {
+  top: 151.29844665527344px;
+  left: 14.2734375px;
+  color: var(--dl-color-default-gray);
+  width: 247px;
+  height: auto;
+  position: absolute;
+  font-size: 17.12812614440918px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: 27.595314025878906px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-text02 {
+  top: 98.9625015258789px;
+  left: 84.6890640258789px;
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25.692188262939453px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-frame0314 {
+  top: 28.546878814697266px;
+  left: 114.1875px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group {
+  top: -0.10645532608032227px;
+  left: -0.8205367922782898px;
+  width: 47.6572265625px;
+  height: 47.6572265625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group1 {
+  top: 0px;
+  left: 0px;
+  width: 47.6572265625px;
+  height: 47.6572265625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-vector {
+  top: 0px;
+  left: 0px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+.app-component-iconbread {
+  top: 0.13149337470531464px;
+  left: -18.4161376953125px;
+  width: 63px;
+  height: 61.8515625px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group996 {
+  top: 16.80510902404785px;
+  left: 3.7946884632110596px;
+  width: 55.24818801879883px;
+  height: 37.63645935058594px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group839 {
+  top: 0px;
+  left: 0px;
+  width: 55.24818801879883px;
+  height: 37.63645935058594px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-vector411 {
+  top: 2.347517251968384px;
+  left: 1.3145368099212646px;
+  width: 53px;
+  height: 34px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector411-stroke {
+  top: 1.0629907846450806px;
+  left: 0.004976090043783188px;
+  width: 55px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector419 {
+  top: 16.951759338378906px;
+  left: -0.000185396813323635px;
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector818-stroke {
+  top: 18.107080459594727px;
+  left: 5.363403320312498px;
+  width: 7px;
+  height: 9px;
+  position: absolute;
+}
+.app-component-subtract {
+  top: 3.0227291584014893px;
+  left: 7.838078498840332px;
+  width: 46px;
+  height: 33px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector412 {
+  top: 12.092571258544922px;
+  left: 8.231411933898924px;
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector413 {
+  top: 4.562127590179447px;
+  left: 19.516529083251953px;
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector414 {
+  top: -0.000009361495354909266px;
+  left: 35.40526580810547px;
+  width: 12px;
+  height: 9px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.app-component-vector416-stroke {
+  top: 11.637588500976562px;
+  left: 12.531468391418457px;
+  width: 10px;
+  height: 13px;
+  position: absolute;
+}
+.app-component-vector417-stroke {
+  top: 4.161269664764408px;
+  left: 27.121124267578125px;
+  width: 7px;
+  height: 16px;
+  position: absolute;
+}
+.app-component-vector418-stroke {
+  top: 1.7990521192550695px;
+  left: 40.82052230834961px;
+  width: 4px;
+  height: 11px;
+  position: absolute;
+}
+.app-component-group969 {
+  top: 11.051723480224613px;
+  left: 34.105098724365234px;
+  width: 18.86138916015625px;
+  height: 17.504369735717773px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-ellipse1179 {
+  top: 8.191542625427243px;
+  left: 7.308414936065674px;
+  width: 2px;
+  height: 3px;
+  position: absolute;
+}
+.app-component-ellipse1188 {
+  top: 10.200622558593746px;
+  left: 3.0671873092651367px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1189 {
+  top: 11.856780052185055px;
+  left: 6.307076930999756px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1190 {
+  top: 5.721639633178707px;
+  left: 5.151443004608154px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1180 {
+  top: 7.123263835906979px;
+  left: 10.783825874328613px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1181 {
+  top: 4.705132961273197px;
+  left: 9.029544830322266px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1182 {
+  top: 5.062653541564945px;
+  left: 14.073933601379395px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1183 {
+  top: 2.4167358875274694px;
+  left: 12.829961776733398px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1184 {
+  top: 1.996724128723148px;
+  left: 17.18221664428711px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1185 {
+  top: 8.296456336975101px;
+  left: 13.149715423583984px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1186 {
+  top: 10.829098701477047px;
+  left: 9.73697566986084px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1187 {
+  top: 15.772761344909664px;
+  left: 0.36485159397125244px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1191 {
+  top: 13.337150573730465px;
+  left: 3.9228355884552px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1192 {
+  top: 13.029893875122067px;
+  left: 1.4644142389297485px;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+.app-component-ellipse1193 {
+  top: 7.802674293518063px;
+  left: 2.459062337875366px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1194 {
+  top: 3.5963325500488317px;
+  left: 7.553605556488037px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1195 {
+  top: 0.916608870029453px;
+  left: 10.914361953735352px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1196 {
+  top: 0.26519587635994313px;
+  left: 14.654232025146484px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-ellipse1197 {
+  top: 3.552713678800501e-15px;
+  left: 17.00917625427246px;
+  width: 1px;
+  height: 2px;
+  position: absolute;
+}
+.app-component-frame2 {
+  top: 0.000003051757857974735px;
+  left: 314.015625px;
+  width: 275.953125px;
+  height: 313.0640563964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.app-component-text04 {
+  top: 151.29844665527344px;
+  left: 14.2734375px;
+  color: var(--dl-color-default-gray);
+  width: 247px;
+  height: auto;
+  position: absolute;
+  font-size: 17.12812614440918px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: 27.595314025878906px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-text06 {
+  top: 98.9625015258789px;
+  left: 88.49531555175781px;
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25.692188262939453px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-frame0292 {
+  top: 27.109777450561523px;
+  left: 115.1966781616211px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group2 {
+  top: -0.00003814697265625px;
+  left: 0.001190185546875px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group3 {
+  top: 0px;
+  left: 0px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-vector1 {
+  top: 0px;
+  left: 0px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+.app-component-vaccine {
+  top: 16.642589569091797px;
+  left: 104.7294921875px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-medicine {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.app-component-colour-a {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-mat10000 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.app-component-colour-a1 {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-coughcolour1 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+  border-radius: 71.3671875px;
+}
+.app-component-colour-b {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-mat20000 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.app-component-colour-b1 {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-rectangle19 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+  border-radius: 71.3671875px;
+}
+.app-component-colour-c {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-mat200001 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.app-component-colour-c1 {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-rectangle191 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+  border-radius: 71.3671875px;
+}
+.app-component-shadow {
+  top: 0px;
+  left: 0px;
+  width: 68.51250457763672px;
+  height: 68.51250457763672px;
+  display: flex;
+  opacity: 0.60;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-shadow0000 {
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.app-component-frame1 {
+  top: 0px;
+  left: 0px;
+  width: 852.4403076171875px;
+  height: 313.0640563964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-bg {
+  top: 0px;
+  left: 0px;
+  width: 276px;
+  height: 313px;
+  position: absolute;
+  border-radius: 14.2734375px;
+}
+.app-component-button {
+  top: 242.64837646484375px;
+  left: 60.899635314941406px;
+  width: 153.99374389648438px;
+  height: 39.837501525878906px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-frame237654 {
+  gap: 9.515625px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 11.418750762939453px 58.99687576293945px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 9.515625px 57.09375px 0px rgba(38, 44, 117, 0.07999999821186066) ;
+  align-items: flex-start;
+  border-radius: 9.515625px;
+  background-color: var(--dl-color-default-white);
+}
+.app-component-text08 {
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  font-size: 14.2734375px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-text10 {
+  top: 151.29844665527344px;
+  left: 14.2734375px;
+  color: var(--dl-color-default-gray);
+  width: 247px;
+  height: auto;
+  position: absolute;
+  font-size: 17.12812614440918px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: 27.595314025878906px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-text12 {
+  top: 98.9625015258789px;
+  left: 95.15625px;
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25.692188262939453px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-frame0281 {
+  top: 28.546878814697266px;
+  left: 114.1875px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group4 {
+  top: 0px;
+  left: 0px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group5 {
+  top: 0px;
+  left: 0px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-vector2 {
+  top: 0px;
+  left: 0px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+.app-component-frame20 {
+  top: 30.44024658203125px;
+  left: 109.72147369384766px;
+  width: 44.72343826293945px;
+  height: 40.91718673706055px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group813 {
+  top: -4.248926639556885px;
+  left: -45.797664642333984px;
+  width: 189px;
+  height: 147px;
+  position: absolute;
+}
+.app-component-button1 {
+  top: 246.93038940429688px;
+  left: 698.446533203125px;
+  width: 153.99374389648438px;
+  height: 39.837501525878906px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-frame2376541 {
+  gap: 9.515625px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 11.418750762939453px 58.99687576293945px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 9.515625px 57.09375px 0px rgba(38, 44, 117, 0.07999999821186066) ;
+  align-items: flex-start;
+  border-radius: 14.2734375px;
+  background-color: var(--dl-color-default-white);
+}
+.app-component-text14 {
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  font-size: 14.2734375px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-frame3 {
+  top: 0.000003051757857974735px;
+  left: 371.109375px;
+  width: 786.7828369140625px;
+  height: 313.0640563964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.app-component-bg1 {
+  top: 0.000003051757857974735px;
+  left: 256.921875px;
+  width: 276px;
+  height: 313px;
+  position: absolute;
+  border-radius: 14.2734375px;
+}
+.app-component-text16 {
+  top: 151.29844665527344px;
+  left: 271.1953125px;
+  color: var(--dl-color-default-gray);
+  width: 247px;
+  height: auto;
+  position: absolute;
+  font-size: 17.12812614440918px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: 27.595314025878906px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-text18 {
+  top: 98.9625015258789px;
+  left: 356.8359375px;
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25.692188262939453px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-frame0303 {
+  top: 28.546878814697266px;
+  left: 371.109375px;
+  width: 47.578125px;
+  height: 47.578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-group6 {
+  top: -25.226160049438477px;
+  left: -25.634572982788086px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group7 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-group8 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-vector3 {
+  top: 25.22616195678711px;
+  left: 25.63457489013672px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+.app-component-icon-exercise {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-image0000 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+}
+.app-component-colour-a2 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-primary10000 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+}
+.app-component-colour-a3 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-coughcolour11 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  border-radius: 358.73907470703125px;
+}
+.app-component-colour-b2 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-secondary20000 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+}
+.app-component-colour-b3 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.app-component-rectangle192 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  border-radius: 405.3656311035156px;
+}
+.app-component-shadow1 {
+  top: 0px;
+  left: 0px;
+  width: 98.01094055175781px;
+  height: 98.01094055175781px;
+  display: flex;
+  opacity: 0.50;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-shadow00001 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 98px;
+  position: absolute;
+}
+.app-component-frame2376542 {
+  gap: 9.515625px;
+  top: 243.1242218017578px;
+  left: 0px;
+  display: flex;
+  padding: 11.418750762939453px 58.99687576293945px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 9.515625px 57.09375px 0px rgba(38, 44, 117, 0.07999999821186066) ;
+  align-items: flex-start;
+  border-radius: 9.515625px;
+  background-color: var(--dl-color-default-white);
+}
+.app-component-text20 {
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  font-size: 14.2734375px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-button2 {
+  top: 246.9304656982422px;
+  left: 632.7890625px;
+  width: 153.99374389648438px;
+  height: 39.837501525878906px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.app-component-frame2376543 {
+  gap: 9.515625px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 11.418750762939453px 58.99687576293945px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 9.515625px 57.09375px 0px rgba(38, 44, 117, 0.07999999821186066) ;
+  align-items: flex-start;
+  border-radius: 9.515625px;
+  background-color: var(--dl-color-default-white);
+}
+.app-component-text22 {
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  font-size: 14.2734375px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-navlink {
+  display: contents;
+}
+.app-component-frame2376544 {
+  gap: 9.515625px;
+  left: 303px;
+  bottom: 28px;
+  display: flex;
+  padding: 11.418750762939453px 38.0625px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 9.515625px 57.09375px 0px rgba(38, 44, 117, 0.07999999821186066) ;
+  align-items: flex-start;
+  border-radius: 9.515625px;
+  text-decoration: none;
+  background-color: rgba(64, 150, 255, 1);
+}
+.app-component-text24 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 14.2734375px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.app-component-button3 {
+  top: 463.410888671875px;
+  left: 674.6572265625px;
+  width: 184px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 39.837501525878906px;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}

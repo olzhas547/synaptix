@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/synaptix/postgres:/var/lib/synaptix/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=S3cretn0
+      - POSTGRES_USER=synaptix_admin
+      - POSTGRES_DB=synaptix_db

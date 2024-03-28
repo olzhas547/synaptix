@@ -1,0 +1,2889 @@
+.cinema4d-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.cinema4d-mycourses {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-frame-admin-panel-menu1 {
+  height: 1156.04736328125px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-frame-admin-panel-menu11 {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-logo {
+  gap: 8px;
+  display: flex;
+  padding: 16px 16px 16px 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-logo1 {
+  gap: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-frame1000002598 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-container-logo {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 4.800000190734863px;
+}
+.cinema4d-book4 {
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14.40000057220459px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-group {
+  top: 1.2000000476837158px;
+  left: 1.2000000476837158px;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-vector {
+  top: 1.7998048067092896px;
+  left: 2.4000489711761475px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-vector01 {
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+.cinema4d-vector02 {
+  top: 5.399805068969727px;
+  left: 3.000049114227295px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-vector03 {
+  top: 8.999805450439453px;
+  left: 2.4000489711761475px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-frame-title {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.cinema4d-text {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  font-size: 20px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 600;
+  line-height: 28px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame-menu {
+  gap: 8px;
+  display: flex;
+  padding: 4px 0;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-menu-items {
+  gap: 8px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-navlink {
+  display: contents;
+}
+.cinema4d-menu-item-inline-navigation-item {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cinema4d-icon-dashboard-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text002 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  width: 184px;
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-navlink1 {
+  display: contents;
+}
+.cinema4d-menu-item-inline-navigation-item1 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgba(186, 224, 255, 1);
+}
+.cinema4d-icon-database-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text004 {
+  color: rgba(9, 88, 217, 1);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-navlink2 {
+  display: contents;
+}
+.cinema4d-menu-item-inline-navigation-item2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cinema4d-icon-bar-chart-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text006 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-navlink3 {
+  display: contents;
+}
+.cinema4d-menu-item-inline-navigation-item3 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cinema4d-icon-calendar-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text008 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-menu-submenu {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-navlink4 {
+  display: contents;
+}
+.cinema4d-menu-item-inline-submenu-title {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cinema4d-icon-file-text-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text010 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-icon-down-outlined {
+  width: 12px;
+  height: 12px;
+}
+.cinema4d-menu-items1 {
+  gap: 8px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-navlink5 {
+  display: contents;
+}
+.cinema4d-menu-item-inline-navigation-item4 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cinema4d-icon-setting-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text012 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-content-wrapper {
+  width: 1176px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.cinema4d-frame-header {
+  gap: 8px;
+  display: flex;
+  padding: 8px 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 0 1px;
+  padding-right: 8px 24px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-icon-search {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+.cinema4d-frame-button {
+  gap: 8px;
+  display: flex;
+  box-sizing: content-box;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+}
+.cinema4d-content {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.cinema4d-icon-menu-fold-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-frame-input-search {
+  width: 348px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-input-wrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 6px 0 0 6px;
+}
+.cinema4d-frame-input-basic {
+  gap: 10px;
+  display: flex;
+  padding: 0 12px;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: center;
+}
+.cinema4d-content1 {
+  gap: 8px;
+  height: 32px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text014 {
+  color: rgba(0, 0, 0, 0.25);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-frame-button1 {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 6px 6px 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-content2 {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.cinema4d-icon-search-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-avatar-button {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.cinema4d-frame-button2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px;
+  box-sizing: content-box;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+}
+.cinema4d-content3 {
+  gap: 8px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.cinema4d-icon-global-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-text016 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-notifications {
+  gap: 8px;
+  display: flex;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.019999999552965164) ;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-icon-bell-outlined {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-content4 {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.cinema4d-frame-badge-basic {
+  height: 14px;
+  display: flex;
+  padding: 0 4px;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: content-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 77, 79, 1);
+}
+.cinema4d-text018 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+}
+.cinema4d-navlink6 {
+  display: contents;
+}
+.cinema4d-frame-avatar {
+  gap: 8px;
+  display: flex;
+  padding: 7px;
+  align-items: flex-start;
+  border-radius: 96px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.cinema4d-icon-user-outlined {
+  width: 18px;
+  height: 18px;
+}
+.cinema4d-frame-card1 {
+  gap: 24px;
+  display: flex;
+  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 1);
+}
+.cinema4d-header-button {
+  gap: 16px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.cinema4d-header-links {
+  gap: 8px;
+  width: 1128px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.cinema4d-frame-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+.cinema4d-breadcrumb-link {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  border-radius: 4px;
+}
+.cinema4d-text020 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-breadcrumb-separator {
+  gap: 10px;
+  display: flex;
+  padding: 0 4px;
+  overflow: hidden;
+  align-items: center;
+}
+.cinema4d-content5 {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text022 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-breadcrumb-link1 {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  border-radius: 4px;
+}
+.cinema4d-text023 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-frame-title1 {
+  gap: 4px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-text025 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 38px;
+}
+.cinema4d-frame2 {
+  width: 1128px;
+  height: 886.04736328125px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 26.698225021362305px 2.5029585361480713px 0 26.698225021362305px;
+  background-color: var(--dl-color-default-white);
+}
+.cinema4d-remixiconslinesystemapps2line {
+  top: 82.5976333618164px;
+  left: 198.5680694580078px;
+  width: 20px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-group1 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-frame80 {
+  gap: 280.33135986328125px;
+  top: 295.348876953125px;
+  left: 131.822509765625px;
+  width: 370px;
+  height: 21.69230842590332px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-rectangle35 {
+  top: 544.810302734375px;
+  left: 568.171630859375px;
+  width: 244px;
+  height: 43px;
+  position: absolute;
+}
+.cinema4d-frame107 {
+  top: 33.372314453125px;
+  left: 801.7810668945312px;
+  width: 293px;
+  height: 819.3017578125px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 26.698225021362305px;
+  background-color: rgba(64, 150, 255, 1);
+}
+.cinema4d-remixiconslinesystemapps2line1 {
+  top: 82.59785461425781px;
+  left: 198.5680694580078px;
+  width: 20px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-group2 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-frame801 {
+  gap: 280.33135986328125px;
+  top: 295.3493347167969px;
+  left: 131.822509765625px;
+  width: 370px;
+  height: 21.69230842590332px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-rectangle351 {
+  top: 544.811279296875px;
+  left: 568.171630859375px;
+  width: 244px;
+  height: 43px;
+  position: absolute;
+}
+.cinema4d-rectangle36 {
+  top: 439.6866149902344px;
+  left: 834.3195190429688px;
+  width: 259px;
+  height: 393px;
+  position: absolute;
+  border-radius: 23.360946655273438px;
+}
+.cinema4d-frame16 {
+  gap: 6.674556255340576px;
+  top: 0.00022247133892960846px;
+  left: 25.86392593383789px;
+  width: 143px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-frame97 {
+  gap: 6.674556255340576px;
+  top: 0.000244140625px;
+  left: -0.000003814697265625px;
+  width: 117px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-frame96 {
+  gap: 3.337278127670288px;
+  display: flex;
+  align-items: flex-start;
+}
+.cinema4d-group50 {
+  top: 162.69261169433594px;
+  left: 82.59765625px;
+  width: 122.64497375488281px;
+  height: 122.64497375488281px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group58 {
+  top: 0px;
+  left: 0px;
+  width: 122.64498138427734px;
+  height: 122.64495849609375px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-text027 {
+  top: 64.24273681640625px;
+  left: 28.366865158081055px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-ellipse10 {
+  top: -1px;
+  left: -3px;
+  width: 118px;
+  height: 118px;
+  position: absolute;
+}
+.cinema4d-ellipse11 {
+  top: 0px;
+  left: 0px;
+  width: 118px;
+  height: 118px;
+  position: absolute;
+}
+.cinema4d-text029 {
+  top: 40.88136672973633px;
+  left: 36.710060119628906px;
+  color: var(--dl-color-default-white);
+  width: 48px;
+  height: auto;
+  position: absolute;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame121 {
+  gap: 13.349112510681152px;
+  top: 21.692529678344727px;
+  left: 25.86392593383789px;
+  width: 240px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+}
+.cinema4d-frame120 {
+  gap: 10.011834144592285px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text031 {
+  color: var(--dl-color-default-white);
+  height: auto;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 26.698225021362305px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame119 {
+  gap: 99.28402709960938px;
+  display: flex;
+  align-items: center;
+}
+.cinema4d-group51 {
+  width: 117px;
+  height: 26.698225021362305px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-ellipse2 {
+  top: 0px;
+  left: 0px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.8999999761581421);
+  border-style: solid;
+  border-width: 0.417159765958786px;
+}
+.cinema4d-ellipse3 {
+  top: 0px;
+  left: 30.035507202148438px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.8999999761581421);
+  border-style: solid;
+  border-width: 0.417159765958786px;
+}
+.cinema4d-ellipse4 {
+  top: 0px;
+  left: 60.071006774902344px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.8999999761581421);
+  border-style: solid;
+  border-width: 0.417159765958786px;
+}
+.cinema4d-ellipse5 {
+  top: 0px;
+  left: 90.10650634765625px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.8999999761581421);
+  border-style: solid;
+  border-width: 0.417159765958786px;
+}
+.cinema4d-frame11 {
+  gap: 8.343194961547852px;
+  width: 24.195266723632812px;
+  height: 24.195266723632812px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6.674556255340576px;
+  justify-content: center;
+  background-color: rgba(9, 88, 217, 1);
+}
+.cinema4d-remixiconslinesystemarrowrightsline {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-group3 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-vector04 {
+  top: 4.702225685119629px;
+  left: 6.859915733337402px;
+  width: 6px;
+  height: 11px;
+  position: absolute;
+}
+.cinema4d-text033 {
+  color: var(--dl-color-default-white);
+  width: 239px;
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group52 {
+  top: 572.4346923828125px;
+  left: 279.3911437988281px;
+  width: 275.2199401855469px;
+  height: 368.76690673828125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-vector05 {
+  top: 221.221923828125px;
+  left: -113.9921646118164px;
+  width: 65px;
+  height: 99px;
+  position: absolute;
+}
+.cinema4d-vector06 {
+  top: 190.038818359375px;
+  left: -26.742225646972656px;
+  width: 16px;
+  height: 29px;
+  position: absolute;
+}
+.cinema4d-vector07 {
+  top: 248.09690856933594px;
+  left: -126.58191680908203px;
+  width: 44px;
+  height: 63px;
+  position: absolute;
+}
+.cinema4d-vector08 {
+  top: 173.173583984375px;
+  left: -27.602615356445312px;
+  width: 202px;
+  height: 152px;
+  position: absolute;
+}
+.cinema4d-vector09 {
+  top: 195.84234619140625px;
+  left: -170.3527374267578px;
+  width: 35px;
+  height: 37px;
+  position: absolute;
+}
+.cinema4d-vector10 {
+  top: 248.322021484375px;
+  left: -154.11935424804688px;
+  width: 15px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-vector11 {
+  top: 48.677490234375px;
+  left: -159.72804260253906px;
+  width: 59px;
+  height: 42px;
+  position: absolute;
+}
+.cinema4d-vector12 {
+  top: 28.092041015625px;
+  left: -129.57699584960938px;
+  width: 34px;
+  height: 35px;
+  position: absolute;
+}
+.cinema4d-group4 {
+  top: 40.53857421875px;
+  left: -154.80538940429688px;
+  width: 18.8258056640625px;
+  height: 18.69254493713379px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-vector13 {
+  top: 0px;
+  left: 0px;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+}
+.cinema4d-vector14 {
+  top: 24.56119728088379px;
+  left: -164.7520294189453px;
+  width: 10px;
+  height: 42px;
+  position: absolute;
+}
+.cinema4d-vector15 {
+  top: 63.797027587890625px;
+  left: -183.59103393554688px;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+}
+.cinema4d-vector16 {
+  top: 20.331298828125px;
+  left: -63.07096862792969px;
+  width: 61px;
+  height: 76px;
+  position: absolute;
+}
+.cinema4d-vector17 {
+  top: 38.74625778198242px;
+  left: -134.1217498779297px;
+  width: 71px;
+  height: 119px;
+  position: absolute;
+}
+.cinema4d-vector18 {
+  top: 74.32135009765625px;
+  left: -23.380502700805664px;
+  width: 132px;
+  height: 92px;
+  position: absolute;
+}
+.cinema4d-vector19 {
+  top: 0.00010112333984579891px;
+  left: -9.853568077087402px;
+  width: 111px;
+  height: 113px;
+  position: absolute;
+}
+.cinema4d-vector20 {
+  top: 55.684326171875px;
+  left: -178.78880310058594px;
+  width: 22px;
+  height: 25px;
+  position: absolute;
+}
+.cinema4d-vector21 {
+  top: 69.44293975830078px;
+  left: -32.955623626708984px;
+  width: 3px;
+  height: 7px;
+  position: absolute;
+}
+.cinema4d-vector22 {
+  top: 115.796142578125px;
+  left: -163.35546875px;
+  width: 1px;
+  height: 15px;
+  position: absolute;
+}
+.cinema4d-vector23 {
+  top: 114.87913513183594px;
+  left: -118.14746856689453px;
+  width: 3px;
+  height: 17px;
+  position: absolute;
+}
+.cinema4d-vector24 {
+  top: 131.25755310058594px;
+  left: -72.6852035522461px;
+  width: 16px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-vector25 {
+  top: 62.22575378417969px;
+  left: -96.88372802734375px;
+  width: 7px;
+  height: 3px;
+  position: absolute;
+}
+.cinema4d-vector26 {
+  top: 74.43867492675781px;
+  left: -106.53543853759766px;
+  width: 1px;
+  height: 5px;
+  position: absolute;
+}
+.cinema4d-vector27 {
+  top: 38.52219772338867px;
+  left: -65.33599090576172px;
+  width: 1px;
+  height: 9px;
+  position: absolute;
+}
+.cinema4d-vector28 {
+  top: 47.14118957519531px;
+  left: -111.4826889038086px;
+  width: 7px;
+  height: 3px;
+  position: absolute;
+}
+.cinema4d-vector29 {
+  top: 36.515838623046875px;
+  left: -83.17774963378906px;
+  width: 5px;
+  height: 2px;
+  position: absolute;
+}
+.cinema4d-vector30 {
+  top: 36.797607421875px;
+  left: -103.83377838134766px;
+  width: 7px;
+  height: 2px;
+  position: absolute;
+}
+.cinema4d-vector31 {
+  top: 34.59095764160156px;
+  left: -119.88128662109375px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.cinema4d-vector32 {
+  top: 37.07925033569336px;
+  left: -116.49684143066406px;
+  width: 1px;
+  height: 5px;
+  position: absolute;
+}
+.cinema4d-vector33 {
+  top: 44.19826126098633px;
+  left: -77.68134307861328px;
+  width: 14px;
+  height: 15px;
+  position: absolute;
+}
+.cinema4d-vector34 {
+  top: 45.414703369140625px;
+  left: -178.78880310058594px;
+  width: 31px;
+  height: 35px;
+  position: absolute;
+}
+.cinema4d-vector35 {
+  top: 51.56943893432617px;
+  left: -181.8555908203125px;
+  width: 12px;
+  height: 15px;
+  position: absolute;
+}
+.cinema4d-vector36 {
+  top: 56.52932357788086px;
+  left: -188.16342163085938px;
+  width: 14px;
+  height: 17px;
+  position: absolute;
+}
+.cinema4d-vector37 {
+  top: 63.67481231689453px;
+  left: -196.99392700195312px;
+  width: 10px;
+  height: 14px;
+  position: absolute;
+}
+.cinema4d-vector38 {
+  top: 123.581298828125px;
+  left: -109.5028076171875px;
+  width: 110px;
+  height: 68px;
+  position: absolute;
+}
+.cinema4d-vector39 {
+  top: 184.582275390625px;
+  left: -59.03788757324219px;
+  width: 145px;
+  height: 7px;
+  position: absolute;
+}
+.cinema4d-vector40 {
+  top: 151.628662109375px;
+  left: -161.5777130126953px;
+  width: 21px;
+  height: 17px;
+  position: absolute;
+}
+.cinema4d-vector41 {
+  top: 153.649658203125px;
+  left: -170.3380584716797px;
+  width: 9px;
+  height: 3px;
+  position: absolute;
+}
+.cinema4d-vector42 {
+  top: 74.95482635498047px;
+  left: -6.281840801239014px;
+  width: 52px;
+  height: 74px;
+  position: absolute;
+}
+.cinema4d-vector43 {
+  top: 132.45565795898438px;
+  left: -0.0000016251964325419976px;
+  width: 133px;
+  height: 66px;
+  position: absolute;
+}
+.cinema4d-vector44 {
+  top: 124.80908966064453px;
+  left: -42.79472732543945px;
+  width: 11px;
+  height: 33px;
+  position: absolute;
+}
+.cinema4d-vector45 {
+  top: 159.512451171875px;
+  left: -101.91897583007812px;
+  width: 22px;
+  height: 6px;
+  position: absolute;
+}
+.cinema4d-vector46 {
+  top: 167.86575317382812px;
+  left: -100.13790130615234px;
+  width: 28px;
+  height: 10px;
+  position: absolute;
+}
+.cinema4d-vector47 {
+  top: 157.946044921875px;
+  left: -26.478240966796875px;
+  width: 16px;
+  height: 3px;
+  position: absolute;
+}
+.cinema4d-vector48 {
+  top: 175.956787109375px;
+  left: -98.61116027832031px;
+  width: 24px;
+  height: 10px;
+  position: absolute;
+}
+.cinema4d-frame123 {
+  gap: 10.011834144592285px;
+  top: 305.361572265625px;
+  left: 25.863922119140625px;
+  width: 233px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text035 {
+  color: var(--dl-color-default-white);
+  height: auto;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group60 {
+  width: 233px;
+  height: 130.15383911132812px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-frame42 {
+  gap: 8.343194961547852px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-frame70 {
+  gap: 5.005917072296143px;
+  display: flex;
+  align-items: flex-start;
+}
+.cinema4d-frame68 {
+  gap: 8.343194961547852px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  padding: 9.177515029907227px 6.674556255340576px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(242, 242, 242, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 13.349112510681152px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-white);
+}
+.cinema4d-frame67 {
+  gap: 10.011834144592285px;
+  display: flex;
+  align-items: flex-end;
+}
+.cinema4d-rectangle20 {
+  width: 4px;
+  height: 29px;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-frame66 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text037 {
+  color: rgba(55, 65, 81, 1);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text038 {
+  color: var(--dl-color-default-lmstext);
+}
+.cinema4d-text040 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame69 {
+  gap: 8.343194961547852px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  padding: 9.177515029907227px 6.674556255340576px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(242, 242, 242, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 13.349112510681152px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-white);
+}
+.cinema4d-frame671 {
+  gap: 10.011834144592285px;
+  display: flex;
+  align-items: flex-end;
+}
+.cinema4d-rectangle201 {
+  width: 4px;
+  height: 29px;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-frame661 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text042 {
+  color: rgba(55, 65, 81, 1);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text043 {
+  color: var(--dl-color-default-lmstext);
+}
+.cinema4d-text045 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group57 {
+  top: 67.57927703857422px;
+  left: 0.834320068359375px;
+  width: 231.94082641601562px;
+  height: 62.574623107910156px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group53 {
+  top: 0px;
+  left: 0px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group56 {
+  top: 0px;
+  left: 0px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-frame681 {
+  gap: 8.343194961547852px;
+  top: 0px;
+  left: 0px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  padding: 9.177515029907227px 6.674556255340576px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(242, 242, 242, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 13.349112510681152px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-white);
+}
+.cinema4d-frame672 {
+  gap: 10.011834144592285px;
+  display: flex;
+  align-items: flex-end;
+}
+.cinema4d-rectangle202 {
+  width: 4px;
+  height: 29px;
+  opacity: 0.90;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-frame662 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text047 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text049 {
+  top: 15.43505859375px;
+  left: 20.857986450195312px;
+  color: rgba(55, 65, 81, 1);
+  height: auto;
+  position: absolute;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text050 {
+  color: var(--dl-color-default-lmstext);
+}
+.cinema4d-group55 {
+  top: 0.0006616355385631323px;
+  left: 118.47337341308594px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-frame122 {
+  gap: 8.343194961547852px;
+  top: 0px;
+  left: 0px;
+  width: 113.46745300292969px;
+  height: 62.5739631652832px;
+  display: flex;
+  padding: 9.177515029907227px 6.674556255340576px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(242, 242, 242, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 13.349112510681152px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-white);
+}
+.cinema4d-frame673 {
+  gap: 10.011834144592285px;
+  display: flex;
+  align-items: flex-end;
+}
+.cinema4d-rectangle203 {
+  width: 4px;
+  height: 29px;
+  opacity: 0.90;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-frame663 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text052 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text054 {
+  top: 14.183361053466797px;
+  left: 22.526630401611328px;
+  color: rgba(55, 65, 81, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text055 {
+  color: var(--dl-color-default-lmstext);
+}
+.cinema4d-group59 {
+  top: 487.2428283691406px;
+  left: 26.698246002197266px;
+  width: 231.94082641601562px;
+  height: 85.10059356689453px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-text057 {
+  top: 0.0001502403902122751px;
+  left: 5.005916118621826px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group12 {
+  top: 31.70429229736328px;
+  left: -9.254591191165673e-7px;
+  width: 231.94082641601562px;
+  height: 53.39645004272461px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-rectangle34 {
+  top: 0.000244140625px;
+  left: -0.00000286102294921875px;
+  width: 232px;
+  height: 53px;
+  position: absolute;
+  border-color: rgba(242, 242, 242, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-frame65 {
+  gap: 33.372779846191406px;
+  top: 6.675048828125px;
+  left: 6.6745500564575195px;
+  width: 218px;
+  height: 40.04733657836914px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cinema4d-frame64 {
+  gap: 13.349112510681152px;
+  top: -0.000244140625px;
+  left: 0px;
+  width: 138px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-component4 {
+  gap: 8.343194961547852px;
+  width: 40.04733657836914px;
+  height: 40.04733657836914px;
+  display: flex;
+  padding: 20.857988357543945px 19.189350128173828px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6.674556255340576px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 248, 210, 1);
+}
+.cinema4d-text059 {
+  color: rgba(232, 167, 0, 1);
+  height: auto;
+  font-size: 15.017751693725586px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame63 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cinema4d-text061 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-frame14 {
+  gap: 6.674556255340576px;
+  display: flex;
+  align-items: flex-start;
+}
+.cinema4d-text063 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text065 {
+  color: var(--dl-color-default-silver3);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text066 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-remixiconslinesystemarrowrightsline1 {
+  top: 13.349054336547852px;
+  left: 202.73963928222656px;
+  width: 13px;
+  height: 13.349112510681152px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cinema4d-group5 {
+  top: 0px;
+  left: 0px;
+  width: 13.349112510681152px;
+  height: 13.349112510681152px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-vector49 {
+  top: 3.1348090171813965px;
+  left: 4.573181629180908px;
+  width: 4px;
+  height: 7px;
+  position: absolute;
+}
+.cinema4d-frame124 {
+  gap: 546.4793090820312px;
+  top: 65.07691955566406px;
+  left: 33.372802734375px;
+  width: 736px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.cinema4d-text068 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 26.698225021362305px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text070 {
+  color: rgba(22, 119, 255, 1);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group62 {
+  top: 119.306884765625px;
+  left: 33.372802734375px;
+  width: 238.61538696289062px;
+  height: 225.07748413085938px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group61 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle45 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text072 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text073 {
+  font-weight: 800;
+}
+.cinema4d-text075 {
+  font-weight: 800;
+}
+.cinema4d-frame29 {
+  gap: 116.80473327636719px;
+  top: 206.07748413085938px;
+  left: 3.6115477541898144e-7px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text077 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text078 {
+  font-weight: 700;
+}
+.cinema4d-text080 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group7 {
+  top: 195.23109436035156px;
+  left: 3.6115477541898144e-7px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(79, 70, 229, 1);
+}
+.cinema4d-rectangle19 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group65 {
+  top: 370.4378662109375px;
+  left: 33.372802734375px;
+  width: 238.61538696289062px;
+  height: 225.076416015625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group611 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle451 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text082 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text083 {
+  font-weight: 800;
+}
+.cinema4d-text085 {
+  font-weight: 800;
+}
+.cinema4d-frame291 {
+  gap: 116.80473327636719px;
+  top: 206.076416015625px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text087 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text088 {
+  font-weight: 700;
+}
+.cinema4d-text090 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group71 {
+  top: 195.23046875px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(79, 70, 229, 1);
+}
+.cinema4d-rectangle191 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group68 {
+  top: 621.568115234375px;
+  left: 33.372802734375px;
+  width: 238.61538696289062px;
+  height: 225.0771026611328px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group612 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle452 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text092 {
+  top: 135.16015625px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text093 {
+  font-weight: 800;
+}
+.cinema4d-text095 {
+  font-weight: 800;
+}
+.cinema4d-frame292 {
+  gap: 116.80473327636719px;
+  top: 206.076904296875px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text097 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text098 {
+  font-weight: 700;
+}
+.cinema4d-text100 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group72 {
+  top: 195.23046875px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(232, 230, 254, 1);
+}
+.cinema4d-rectangle192 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group63 {
+  top: 119.306884765625px;
+  left: 285.3372802734375px;
+  width: 238.61538696289062px;
+  height: 225.07748413085938px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group613 {
+  top: 0px;
+  left: 0.000010654065590642858px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle453 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text102 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text103 {
+  font-weight: 800;
+}
+.cinema4d-text105 {
+  font-weight: 800;
+}
+.cinema4d-frame293 {
+  gap: 116.80473327636719px;
+  top: 206.07748413085938px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text107 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text108 {
+  font-weight: 700;
+}
+.cinema4d-text110 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group73 {
+  top: 195.23109436035156px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(79, 70, 229, 1);
+}
+.cinema4d-rectangle193 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group66 {
+  top: 370.4378662109375px;
+  left: 285.3373107910156px;
+  width: 238.61538696289062px;
+  height: 225.076416015625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group614 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle454 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text112 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text113 {
+  font-weight: 800;
+}
+.cinema4d-text115 {
+  font-weight: 800;
+}
+.cinema4d-frame294 {
+  gap: 116.80473327636719px;
+  top: 206.076416015625px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text117 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text118 {
+  font-weight: 700;
+}
+.cinema4d-text120 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group74 {
+  top: 195.23046875px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(79, 70, 229, 1);
+}
+.cinema4d-rectangle194 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group69 {
+  top: 621.568115234375px;
+  left: 285.3372802734375px;
+  width: 238.61538696289062px;
+  height: 225.0771026611328px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group615 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle455 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text122 {
+  top: 135.16015625px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text123 {
+  font-weight: 800;
+}
+.cinema4d-text125 {
+  font-weight: 800;
+}
+.cinema4d-frame295 {
+  gap: 116.80473327636719px;
+  top: 206.076904296875px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text127 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text128 {
+  font-weight: 700;
+}
+.cinema4d-text130 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group75 {
+  top: 195.23046875px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(232, 230, 254, 1);
+}
+.cinema4d-rectangle195 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group64 {
+  top: 119.306884765625px;
+  left: 537.3018188476562px;
+  width: 238.61538696289062px;
+  height: 225.07748413085938px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group616 {
+  top: 0px;
+  left: 0.000021669286070391536px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle456 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text132 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text133 {
+  font-weight: 800;
+}
+.cinema4d-text135 {
+  font-weight: 800;
+}
+.cinema4d-frame296 {
+  gap: 116.80473327636719px;
+  top: 206.07748413085938px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text137 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text138 {
+  font-weight: 700;
+}
+.cinema4d-text140 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group76 {
+  top: 195.23109436035156px;
+  left: 0px;
+  width: 238.61538696289062px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(79, 70, 229, 1);
+}
+.cinema4d-rectangle196 {
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group67 {
+  top: 370.4378662109375px;
+  left: 537.3018188476562px;
+  width: 237.78109741210938px;
+  height: 225.076416015625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group617 {
+  top: 0px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-navlink7 {
+  display: contents;
+}
+.cinema4d-rectangle457 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+  text-decoration: none;
+}
+.cinema4d-text142 {
+  top: 135.15966796875px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text143 {
+  font-weight: 800;
+}
+.cinema4d-text145 {
+  font-weight: 800;
+}
+.cinema4d-frame297 {
+  gap: 122.64497375488281px;
+  top: 206.076416015625px;
+  left: -0.000030517578125px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text147 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text148 {
+  font-weight: 700;
+}
+.cinema4d-text150 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group77 {
+  top: 195.23046875px;
+  left: -0.000030517578125px;
+  width: 237.78106689453125px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(232, 230, 254, 1);
+}
+.cinema4d-rectangle24 {
+  top: 0px;
+  left: 0px;
+  width: 146px;
+  height: 4px;
+  position: absolute;
+  border-radius: 6.674556255340576px;
+}
+.cinema4d-group70 {
+  top: 621.568115234375px;
+  left: 537.3017578125px;
+  width: 237.7810821533203px;
+  height: 225.0771026611328px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-group618 {
+  top: 0px;
+  left: 0.000030517578125px;
+  width: 237.78106689453125px;
+  height: 188.55621337890625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.cinema4d-rectangle458 {
+  top: 0px;
+  left: 0px;
+  width: 238px;
+  height: 189px;
+  position: absolute;
+  border-radius: 13.349112510681152px;
+}
+.cinema4d-text152 {
+  top: 135.16015625px;
+  left: 12.5147705078125px;
+  color: var(--dl-color-default-white);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text153 {
+  font-weight: 800;
+}
+.cinema4d-text155 {
+  font-weight: 800;
+}
+.cinema4d-frame298 {
+  gap: 122.64497375488281px;
+  top: 206.076904296875px;
+  left: 0px;
+  width: 218.5917205810547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text157 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-text158 {
+  font-weight: 700;
+}
+.cinema4d-text160 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cinema4d-group78 {
+  top: 195.23046875px;
+  left: 0px;
+  width: 237.78106689453125px;
+  height: 4.171597480773926px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(232, 230, 254, 1);
+}
+.cinema4d-frame-input-search1 {
+  top: 16px;
+  left: 16px;
+  width: 757px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-input-wrapper1 {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 6px 0 0 6px;
+}
+.cinema4d-frame-input-basic1 {
+  gap: 10px;
+  display: flex;
+  padding: 0 12px;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: center;
+}
+.cinema4d-content6 {
+  gap: 8px;
+  height: 32px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cinema4d-text162 {
+  color: rgba(0, 0, 0, 0.25);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-frame-button3 {
+  gap: 8px;
+  display: flex;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.019999999552965164) ;
+  align-items: center;
+  border-radius: 0 6px 6px 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(22, 119, 255, 1);
+}
+.cinema4d-content7 {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.cinema4d-icon-search-outlined1 {
+  width: 16px;
+  height: 16px;
+}
+.cinema4d-frame-footer1 {
+  gap: 24px;
+  display: flex;
+  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.cinema4d-content-wrapper1 {
+  gap: 223px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.cinema4d-content-wrapper2 {
+  gap: 48px;
+  display: flex;
+  align-items: flex-end;
+}
+.cinema4d-text164 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-text166 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-text168 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-text170 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.cinema4d-text172 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  width: 1201px;
+  height: auto;
+  align-self: stretch;
+  text-align: right;
+  line-height: 22px;
+}

@@ -1,0 +1,2917 @@
+.homework3-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.homework3-mycourses {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-frame-admin-panel-menu1 {
+  height: 1156.04736328125px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-frame-admin-panel-menu11 {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-logo {
+  gap: 8px;
+  display: flex;
+  padding: 16px 16px 16px 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-logo1 {
+  gap: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-frame1000002598 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-container-logo {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 4.800000190734863px;
+}
+.homework3-book4 {
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14.40000057220459px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group {
+  top: 1.2000000476837158px;
+  left: 1.2000000476837158px;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector {
+  top: 1.7998048067092896px;
+  left: 2.3998048305511475px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.homework3-vector01 {
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+.homework3-vector02 {
+  top: 5.399805068969727px;
+  left: 2.999804973602295px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.homework3-vector03 {
+  top: 8.999805450439453px;
+  left: 2.3998048305511475px;
+  width: 3px;
+  height: 1px;
+  position: absolute;
+}
+.homework3-frame-title {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  font-size: 20px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 600;
+  line-height: 28px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame-menu {
+  gap: 8px;
+  display: flex;
+  padding: 4px 0;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-menu-items {
+  gap: 8px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-menu-item-inline-navigation-item {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.homework3-icon-dashboard-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text002 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  width: 184px;
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+  text-decoration: none;
+}
+.homework3-navlink {
+  display: contents;
+}
+.homework3-menu-item-inline-navigation-item1 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgba(186, 224, 255, 1);
+}
+.homework3-icon-database-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text004 {
+  color: rgba(9, 88, 217, 1);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-menu-item-inline-navigation-item2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.homework3-icon-bar-chart-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text006 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+  text-decoration: none;
+}
+.homework3-menu-item-inline-navigation-item3 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.homework3-icon-calendar-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text008 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+  text-decoration: none;
+}
+.homework3-menu-submenu {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-menu-item-inline-submenu-title {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.homework3-icon-file-text-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text010 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+  text-decoration: none;
+}
+.homework3-icon-down-outlined {
+  width: 12px;
+  height: 12px;
+}
+.homework3-menu-items1 {
+  gap: 8px;
+  display: flex;
+  padding: 0 4px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-menu-item-inline-navigation-item4 {
+  gap: 8px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.homework3-icon-setting-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text012 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+  text-decoration: none;
+}
+.homework3-content-wrapper {
+  width: 1176px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.homework3-frame-header {
+  gap: 8px;
+  display: flex;
+  padding: 8px 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 0 0 1px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-icon-search {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+.homework3-frame-button {
+  gap: 8px;
+  display: flex;
+  box-sizing: content-box;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+}
+.homework3-content {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.homework3-icon-menu-fold-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-frame-input-search {
+  width: 348px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-input-wrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 6px 0 0 6px;
+}
+.homework3-frame-input-basic {
+  gap: 10px;
+  display: flex;
+  padding: 0 12px;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: center;
+}
+.homework3-content1 {
+  gap: 8px;
+  height: 32px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-text014 {
+  color: rgba(0, 0, 0, 0.25);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-frame-button1 {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 6px 6px 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-content2 {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.homework3-icon-search-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-avatar-button {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.homework3-frame-button2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px;
+  box-sizing: content-box;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+}
+.homework3-content3 {
+  gap: 8px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.homework3-icon-global-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-text015 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-notifications {
+  gap: 8px;
+  display: flex;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.019999999552965164) ;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.15000000596046448);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-icon-bell-outlined {
+  width: 16px;
+  height: 16px;
+}
+.homework3-content4 {
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.homework3-frame-badge-basic {
+  height: 14px;
+  display: flex;
+  padding: 0 4px;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: content-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 77, 79, 1);
+}
+.homework3-text017 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+}
+.homework3-frame-avatar {
+  gap: 8px;
+  display: flex;
+  padding: 7px;
+  align-items: flex-start;
+  border-radius: 96px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.homework3-navlink1 {
+  display: contents;
+}
+.homework3-icon-user-outlined {
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+}
+.homework3-frame-card1 {
+  gap: 24px;
+  display: flex;
+  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 1);
+}
+.homework3-header-button {
+  gap: 16px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.homework3-header-links {
+  gap: 8px;
+  width: 1128px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.homework3-frame-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+.homework3-breadcrumb-link {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  border-radius: 4px;
+}
+.homework3-text019 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-breadcrumb-separator {
+  gap: 10px;
+  display: flex;
+  padding: 0 4px;
+  overflow: hidden;
+  align-items: center;
+}
+.homework3-content5 {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text021 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-breadcrumb-link1 {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  border-radius: 4px;
+}
+.homework3-text022 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-breadcrumb-separator1 {
+  gap: 10px;
+  display: flex;
+  padding: 0 4px;
+  overflow: hidden;
+  align-items: center;
+}
+.homework3-content6 {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text024 {
+  color: rgba(0, 0, 0, 0.44999998807907104);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-breadcrumb-link2 {
+  gap: 4px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  border-radius: 4px;
+}
+.homework3-text025 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-frame-title1 {
+  gap: 4px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-text027 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 38px;
+}
+.homework3-frame1000002676 {
+  width: 1128px;
+  height: 886.04736328125px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-frame1 {
+  top: -0.000244140625px;
+  left: 0px;
+  width: 1128px;
+  height: 886.04736328125px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 26.698225021362305px 2.5029585361480713px 0 26.698225021362305px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-remixiconslinesystemapps2line {
+  top: 82.59765625px;
+  left: 198.56787109375px;
+  width: 20px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group01 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-rectangle35 {
+  top: 544.8101806640625px;
+  left: 568.1715698242188px;
+  width: 244px;
+  height: 43px;
+  position: absolute;
+}
+.homework3-frame332 {
+  gap: 135.99407958984375px;
+  top: 96.94140625px;
+  left: 36.66943359375px;
+  width: 730px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.homework3-frame331 {
+  gap: 13.349112510681152px;
+  display: flex;
+  align-items: flex-start;
+}
+.homework3-frame151 {
+  gap: 8.343194961547852px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: rgba(145, 202, 255, 1);
+}
+.homework3-frame103 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text029 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame152 {
+  gap: 8.343194961547852px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: var(--dl-color-default-white);
+}
+.homework3-frame1031 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text031 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame187 {
+  gap: 8.343194961547852px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: var(--dl-color-default-white);
+}
+.homework3-frame1032 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text033 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame188 {
+  gap: 10.011834144592285px;
+  width: 141px;
+  height: 42px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: var(--dl-color-default-lmcaccent5);
+}
+.homework3-frame1033 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text035 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group345 {
+  width: 53px;
+  height: 20.857988357543945px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-star6 {
+  top: 1.3322676295501878e-15px;
+  left: 0px;
+  width: 16px;
+  height: 21px;
+  position: absolute;
+}
+.homework3-star7 {
+  top: 0.000003430970309636905px;
+  left: 19.189346313476562px;
+  width: 15px;
+  height: 21px;
+  position: absolute;
+}
+.homework3-star8 {
+  top: 0.000003430970309636905px;
+  left: 37.544376373291016px;
+  width: 16px;
+  height: 21px;
+  position: absolute;
+}
+.homework3-frame87 {
+  gap: 13.349112510681152px;
+  display: flex;
+  align-items: center;
+}
+.homework3-remixiconslinebusinesscalendar2line {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group02 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector04 {
+  top: 0.834319531917572px;
+  left: 1.668639063835144px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+}
+.homework3-remixiconslinesystemshareline {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group03 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector05 {
+  top: 1.6670095920562744px;
+  left: 1.668639063835144px;
+  width: 16px;
+  height: 17px;
+  position: absolute;
+}
+.homework3-remixiconsfillbusinessbookmarkfill {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group04 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector06 {
+  top: 1.668639063835144px;
+  left: 3.337278127670288px;
+  width: 13px;
+  height: 17px;
+  position: absolute;
+}
+.homework3-frame190 {
+  top: 99px;
+  left: 798px;
+  width: 301px;
+  height: 191.05917358398438px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 1.668639063835144px 4.171597480773926px 0px rgba(0, 0, 0, 0.07000000029802322) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 20.02366828918457px;
+  background-color: rgba(145, 202, 255, 1);
+}
+.homework3-remixiconslinesystemapps2line1 {
+  top: 106.79296875px;
+  left: 198.56787109375px;
+  width: 20px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group05 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-frame80 {
+  gap: 280.33135986328125px;
+  top: 319.5440368652344px;
+  left: 131.822509765625px;
+  width: 370px;
+  height: 21.69230842590332px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.homework3-rectangle351 {
+  top: 569.0055541992188px;
+  left: 568.171630859375px;
+  width: 244px;
+  height: 43px;
+  position: absolute;
+}
+.homework3-rectangle36 {
+  top: 463.8813171386719px;
+  left: 834.319580078125px;
+  width: 259px;
+  height: 393px;
+  position: absolute;
+  border-radius: 23.360946655273438px;
+}
+.homework3-frame16 {
+  gap: 6.674556255340576px;
+  top: 24.194915771484375px;
+  left: 25.863922119140625px;
+  width: 143px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.homework3-frame97 {
+  gap: 6.674556255340576px;
+  top: -0.000396728515625px;
+  left: 0.000152587890625px;
+  width: 117px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.homework3-frame96 {
+  gap: 3.337278127670288px;
+  display: flex;
+  align-items: flex-start;
+}
+.homework3-frame11 {
+  gap: 8.343194961547852px;
+  top: 90.94049072265625px;
+  left: 254.46746826171875px;
+  width: 27px;
+  height: 25.863906860351562px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6.674556255340576px;
+  justify-content: center;
+  background-color: var(--dl-color-default-lmsblack);
+}
+.homework3-remixiconslinesystemarrowrightsline {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group06 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector07 {
+  top: 4.702417850494385px;
+  left: 6.8595075607299805px;
+  width: 6px;
+  height: 11px;
+  position: absolute;
+}
+.homework3-frame256 {
+  gap: 6.674556255340576px;
+  top: 140.99964904785156px;
+  left: 20.023681640625px;
+  width: 261px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.homework3-group80 {
+  width: 261px;
+  height: 30.680824279785156px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-frame29 {
+  gap: 151.84616088867188px;
+  top: 11.680824279785156px;
+  left: 0.834564208984375px;
+  width: 260.30767822265625px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-text037 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text038 {
+  font-weight: 700;
+}
+.homework3-text040 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group7 {
+  top: 0px;
+  left: 0px;
+  width: 261.1419982910156px;
+  height: 8.343194961547852px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-rectangle19 {
+  top: 0.834320068359375px;
+  left: 0.834320068359375px;
+  width: 260px;
+  height: 7px;
+  position: absolute;
+  box-sizing: content-box;
+  border-radius: 6.674556255340576px;
+}
+.homework3-rectangle24 {
+  top: 0px;
+  left: 0px;
+  width: 76px;
+  height: 8px;
+  position: absolute;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+}
+.homework3-hw {
+  top: 147px;
+  left: 35px;
+  width: 730.0296020507812px;
+  height: 542px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.homework3-container1 {
+  flex: 0 0 auto;
+  width: 730.0296020507812px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.homework3-group79 {
+  top: 0px;
+  left: 0px;
+  width: 730.0296020507812px;
+  height: 550px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(230, 244, 255, 1);
+}
+.homework3-navlink2 {
+  display: contents;
+}
+.homework3-frame1511 {
+  gap: 8.343194961547852px;
+  left: 13px;
+  bottom: 0px;
+  height: 35.599342346191406px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  text-decoration: none;
+  background-color: var(--dl-color-default-lmstext);
+}
+.homework3-frame1034 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text042 {
+  color: var(--dl-color-default-white);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-rectangle94 {
+  top: 54.289066314697266px;
+  left: 0px;
+  width: 730px;
+  height: 54px;
+  position: absolute;
+  border-color: rgba(55, 65, 81, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 0 0 13.349112510681152px 13.349112510681152px;
+}
+.homework3-group347 {
+  top: 11.570347785949707px;
+  left: 0px;
+  width: 730.0296020507812px;
+  height: 98px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-frame111 {
+  gap: 8.343194961547852px;
+  top: 4px;
+  right: 20px;
+  width: 28.479473114013672px;
+  height: 25.863906860351562px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6.674556255340576px;
+  justify-content: center;
+  background-color: var(--dl-color-default-lmsblack);
+}
+.homework3-remixiconslinesystemarrowrightsline1 {
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group07 {
+  top: 0px;
+  left: 0px;
+  width: 20.02366828918457px;
+  height: 20.02366828918457px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector08 {
+  top: 4.702010631561279px;
+  left: 6.859914779663086px;
+  width: 6px;
+  height: 11px;
+  position: absolute;
+}
+.homework3-text044 {
+  top: 3.5595810413360596px;
+  left: 20.0234375px;
+  color: var(--dl-color-default-lmstext);
+  width: 431px;
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group346 {
+  top: 65px;
+  left: 20px;
+  width: 690.1065063476562px;
+  height: 35.59934616088867px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-frame1512 {
+  gap: 8.343194961547852px;
+  top: 0px;
+  left: 627.408203125px;
+  width: 64px;
+  height: 35.599342346191406px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: rgba(145, 202, 255, 1);
+}
+.homework3-frame1035 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text046 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame154 {
+  gap: 6.674556255340576px;
+  top: 0px;
+  left: 0px;
+  height: 35.599342346191406px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-frame147 {
+  gap: 8.343194961547852px;
+  height: 33.372779846191406px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  justify-content: center;
+  background-color: var(--dl-color-default-lmstext);
+}
+.homework3-text048 {
+  color: var(--dl-color-default-white);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame148 {
+  gap: 8.343194961547852px;
+  height: 33.372779846191406px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-frame1036 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text050 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame150 {
+  gap: 8.343194961547852px;
+  height: 33.372779846191406px;
+  display: flex;
+  padding: 3.337278127670288px 13.349112510681152px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-frame1037 {
+  gap: 8.343194961547852px;
+  display: flex;
+  align-items: center;
+}
+.homework3-text052 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group348 {
+  left: 23px;
+  width: 689.9822998046875px;
+  bottom: 0px;
+  height: 35.599666595458984px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group262 {
+  top: -1px;
+  right: 1px;
+  width: 43.38461685180664px;
+  height: 35.599342346191406px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(145, 202, 255, 1);
+}
+.homework3-chat {
+  top: 8.899383544921875px;
+  left: 13.34912109375px;
+  width: 16.686389923095703px;
+  height: 18.689655303955078px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-icon {
+  top: 0.06778324395418167px;
+  left: -0.000005417321517597884px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+}
+.homework3-frame335 {
+  gap: 20.02366828918457px;
+  top: 146.84768676757812px;
+  left: 20.02392578125px;
+  width: 643px;
+  height: 166px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.homework3-frame333 {
+  gap: 13.349112510681152px;
+  height: 75px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text054 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 15.017752px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: "Mulish";
+  font-weight: 800;
+  line-height: 21.692308px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text055 {
+  color: rgb(36, 37, 52);
+  width: 642px;
+  height: auto;
+  font-size: 11.680473px;
+  font-style: Regular;
+  text-align: left;
+  font-family: "Mulish";
+  font-weight: 400;
+  line-height: 18.35503px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text056 {
+  color: var(--dl-color-default-lmsblack);
+  font-weight: 400;
+  text-decoration: none;
+}
+.homework3-text057 {
+  color: var(--dl-color-default-lmsaccent4);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.homework3-text058 {
+  color: var(--dl-color-default-lmsaccent4);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.homework3-text064 {
+  color: #65a7f2;
+  text-decoration: underline;
+}
+.homework3-frame334 {
+  gap: 13.349112510681152px;
+  width: 367px;
+  height: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text067 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 15.017752px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: "Mulish";
+  font-weight: 800;
+  line-height: 21.692308px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame330 {
+  gap: 160.18934631347656px;
+  width: 354.5857849121094px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-frame329 {
+  gap: 33.372779846191406px;
+  display: flex;
+  align-items: center;
+}
+.homework3-frame328 {
+  gap: 15.017751693725586px;
+  width: 329.55621337890625px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-frame1481 {
+  gap: 13.349112510681152px;
+  width: 175.2071075439453px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-group107 {
+  width: 33px;
+  height: 32.3916130065918px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group104 {
+  top: 0.000244140625px;
+  left: 0.000030517578125px;
+  width: 33.372779846191406px;
+  height: 32.3913688659668px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-union {
+  left: -4px;
+  width: 33px;
+  bottom: -1px;
+  height: 32px;
+  position: absolute;
+}
+.homework3-group103 {
+  right: -81px;
+  width: 33.372779846191406px;
+  bottom: -16px;
+  height: 32.3913688659668px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.homework3-image137 {
+  top: -9px;
+  left: -66px;
+  width: 27px;
+  height: 22px;
+  position: absolute;
+}
+.homework3-frame146 {
+  gap: -1.668639063835144px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text068 {
+  color: var(--dl-color-default-lmstext);
+  width: 133px;
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text070 {
+  color: var(--dl-color-default-lmstext);
+  width: 145px;
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame155 {
+  gap: 13.349112510681152px;
+  width: 175.2071075439453px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-group108 {
+  width: 33px;
+  height: 32.391754150390625px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group1041 {
+  top: 0.000244140625px;
+  left: 0px;
+  width: 33.37308883666992px;
+  height: 32.391510009765625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-union1 {
+  top: 0px;
+  left: -9px;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+}
+.homework3-maskgroup {
+  top: -13px;
+  left: 8px;
+  width: 33.37308883666992px;
+  height: 32.391510009765625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.homework3-maskgroup1 {
+  top: -3px;
+  right: -50px;
+  width: 20.432313919067383px;
+  height: 31.614864349365234px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-rectangle69 {
+  left: -77px;
+  width: 27px;
+  bottom: -15px;
+  height: 28px;
+  position: absolute;
+}
+.homework3-group1031 {
+  top: 0px;
+  left: -18px;
+  width: 33.37308883666992px;
+  height: 32.391510009765625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-union2 {
+  top: 0px;
+  right: -9px;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+}
+.homework3-frame1461 {
+  gap: -1.668639063835144px;
+  width: 196px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-text072 {
+  color: var(--dl-color-default-lmstext);
+  width: 133px;
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text074 {
+  color: var(--dl-color-default-lmstext);
+  width: 145px;
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text076 {
+  top: 43.431640625px;
+  left: 33.37255859375px;
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 26.698225021362305px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-frame123 {
+  gap: 10.011834144592285px;
+  top: 533.9640502929688px;
+  left: 61.739654541015625px;
+  width: 184px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homework3-group791 {
+  top: 701.662353515625px;
+  left: 33.37255859375px;
+  width: 730.0296020507812px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 151.0118408203125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  justify-content: center;
+  background-color: rgba(235, 243, 253, 1);
+}
+.homework3-text078 {
+  top: 715.0113525390625px;
+  left: 53.396453857421875px;
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group269 {
+  top: 761.0181884765625px;
+  left: 71.75146484375px;
+  width: 92.002685546875px;
+  height: 72.28326416015625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group349 {
+  top: 4.16192626953125px;
+  left: 20.02294921875px;
+  width: 33.208229064941406px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group25 {
+  top: 0px;
+  left: 0px;
+  width: 33.208229064941406px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group24 {
+  top: 0px;
+  left: 0px;
+  width: 33.208229064941406px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector09 {
+  top: 1.2899169921875px;
+  left: 1.532562255859375px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector10 {
+  top: 0px;
+  left: 0px;
+  width: 33px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text080 {
+  top: 19.6402587890625px;
+  left: 7.275115966796875px;
+  color: rgba(39, 106, 183, 1);
+  width: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group350 {
+  top: 47.437103271484375px;
+  left: 0px;
+  width: 74px;
+  height: 24.846160888671875px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text082 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text084 {
+  top: 10.846160888671875px;
+  left: 20.858001708984375px;
+  color: var(--dl-color-default-silver);
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical {
+  top: 0px;
+  left: 79.2603759765625px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group2691 {
+  top: 750.0527954101562px;
+  left: 53.396453857421875px;
+  width: 125.79786682128906px;
+  height: 82.5976333618164px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-group3491 {
+  top: 8.344552040100098px;
+  left: 43.838661193847656px;
+  width: 34.587188720703125px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group251 {
+  top: 0px;
+  left: 0px;
+  width: 34.587188720703125px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group241 {
+  top: 0px;
+  left: 0px;
+  width: 34.587188720703125px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector11 {
+  top: 1.289794921875px;
+  left: 1.59613037109375px;
+  width: 32px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector12 {
+  top: 0px;
+  left: 0px;
+  width: 35px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text086 {
+  top: 19.63818359375px;
+  left: 8.30950927734375px;
+  color: rgba(39, 106, 183, 1);
+  width: 20px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group3501 {
+  top: 53.39643478393555px;
+  left: 25.02933692932129px;
+  width: 74.25444030761719px;
+  height: 24.84616470336914px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text088 {
+  color: var(--dl-color-default-lmstext);
+  width: 74px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text090 {
+  top: 10.846163749694824px;
+  left: 26.684627532958984px;
+  color: var(--dl-color-default-silver);
+  width: 30px;
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical1 {
+  top: 6.7934956550598145px;
+  left: 106.61894226074219px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group270 {
+  top: 750.0527954101562px;
+  left: 194.44207763671875px;
+  width: 125.79786682128906px;
+  height: 82.5976333618164px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-group3492 {
+  top: 8.453926086425781px;
+  left: 44.792110443115234px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group252 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group242 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector13 {
+  top: 1.289780855178833px;
+  left: 1.5786546468734741px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector14 {
+  top: 0px;
+  left: 0px;
+  width: 34px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text092 {
+  top: 19.63909912109375px;
+  left: 7.4932861328125px;
+  color: rgba(39, 106, 183, 1);
+  width: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group3502 {
+  top: 53.39643478393555px;
+  left: 21.646324157714844px;
+  width: 83.43195343017578px;
+  height: 24.84616470336914px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text094 {
+  color: var(--dl-color-default-lmstext);
+  width: 83px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text096 {
+  top: 10.846163749694824px;
+  left: 26.69821548461914px;
+  color: var(--dl-color-default-silver);
+  width: 30px;
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical2 {
+  top: 6.7934956550598145px;
+  left: 106.57291412353516px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group271 {
+  top: 750.0527954101562px;
+  left: 335.48931884765625px;
+  width: 125.79786682128906px;
+  height: 82.5976333618164px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-group3493 {
+  top: 8.453804016113281px;
+  left: 44.79143524169922px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group253 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group243 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector15 {
+  top: 1.289794921875px;
+  left: 1.578582763671875px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector16 {
+  top: 0px;
+  left: 0px;
+  width: 34px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text098 {
+  top: 19.63928985595703px;
+  left: 7.493885040283203px;
+  color: rgba(22, 119, 255, 1);
+  width: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group3503 {
+  top: 53.39643478393555px;
+  left: 18.262834548950195px;
+  width: 88.4378662109375px;
+  height: 24.84616470336914px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text100 {
+  color: var(--dl-color-default-lmstext);
+  width: 88px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text102 {
+  top: 10.846163749694824px;
+  left: 29.20118522644043px;
+  color: var(--dl-color-default-silver);
+  width: 30px;
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical3 {
+  top: 6.7934956550598145px;
+  left: 106.52689361572266px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group272 {
+  top: 750.0527954101562px;
+  left: 476.53497314453125px;
+  width: 125.79786682128906px;
+  height: 82.5976333618164px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-group3494 {
+  top: 8.453987121582031px;
+  left: 44.79165267944336px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group254 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group244 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector17 {
+  top: 1.289780855178833px;
+  left: 1.5789649486541748px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector18 {
+  top: 0px;
+  left: 0px;
+  width: 34px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text104 {
+  top: 19.63910675048828px;
+  left: 7.493654251098633px;
+  color: rgba(22, 119, 255, 1);
+  width: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group3504 {
+  top: 53.39643478393555px;
+  left: 19.050416946411133px;
+  width: 88.4378662109375px;
+  height: 24.84616470336914px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text106 {
+  color: var(--dl-color-default-lmstext);
+  width: 88px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text108 {
+  top: 10.846160888671875px;
+  left: 29.201187133789062px;
+  color: var(--dl-color-default-silver);
+  width: 30px;
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical4 {
+  top: 6.7934956550598145px;
+  left: 106.48042297363281px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group273 {
+  top: 750.0527954101562px;
+  left: 617.58056640625px;
+  width: 125.79786682128906px;
+  height: 82.5976333618164px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-group3495 {
+  top: 8.453987121582031px;
+  left: 44.791683197021484px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group255 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-group245 {
+  top: 0px;
+  left: 0px;
+  width: 34.20709991455078px;
+  height: 39.9984245300293px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector19 {
+  top: 1.289780855178833px;
+  left: 1.5789610147476196px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-vector20 {
+  top: 0px;
+  left: 0px;
+  width: 34px;
+  height: 40px;
+  position: absolute;
+}
+.homework3-text110 {
+  top: 19.63910675048828px;
+  left: 7.493653297424316px;
+  color: rgba(22, 119, 255, 1);
+  width: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 6.674556255340576px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group3505 {
+  top: 53.39643478393555px;
+  left: 19.00469207763672px;
+  width: 88.4378662109375px;
+  height: 24.84616470336914px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text112 {
+  color: var(--dl-color-default-lmstext);
+  width: 88px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text114 {
+  top: 10.846163749694824px;
+  left: 29.201183319091797px;
+  color: var(--dl-color-default-silver);
+  width: 30px;
+  height: auto;
+  position: absolute;
+  font-size: 8.343194961547852px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 13.349112510681152px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-morevertical5 {
+  top: 6.7934956550598145px;
+  left: 106.4344253540039px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.homework3-group370 {
+  top: 303.4072265625px;
+  left: 798px;
+  width: 301.1893615722656px;
+  height: 468.0532531738281px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(241, 210, 241, 1);
+}
+.homework3-frame77 {
+  gap: 122.64497375488281px;
+  top: 163.52664184570312px;
+  left: 32.538482666015625px;
+  width: 247.7928924560547px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.homework3-frame76 {
+  gap: 10.84615421295166px;
+  display: flex;
+  align-items: center;
+}
+.homework3-remixiconslinebusinessbarchartline {
+  width: 13.349112510681152px;
+  height: 13.349112510681152px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group08 {
+  top: 0px;
+  left: 0px;
+  width: 13.349112510681152px;
+  height: 13.349112510681152px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector21 {
+  top: 1.112154483795166px;
+  left: 1.668639063835144px;
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.homework3-text116 {
+  color: var(--dl-color-default-lmsblack);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text118 {
+  color: var(--dl-color-default-lmsblack);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group351 {
+  top: 20.02367401123047px;
+  left: 19.189361572265625px;
+  width: 260.5976257324219px;
+  height: 26.698225021362305px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text120 {
+  top: 1.6686410903930664px;
+  left: 0.000001986351207960979px;
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  position: absolute;
+  font-size: 15.017751693725586px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group138 {
+  top: 0.0000020314955690992065px;
+  left: 196.8994140625px;
+  width: 63.69822692871094px;
+  height: 26.698225021362305px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-frame173 {
+  gap: 8.343194961547852px;
+  top: 0px;
+  left: 0px;
+  width: 71px;
+  height: 26.698225021362305px;
+  display: flex;
+  padding: 0 13.349112510681152px;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+  border-radius: 6.674556255340576px;
+  justify-content: center;
+  background-color: var(--dl-color-default-white);
+}
+.homework3-text122 {
+  color: var(--dl-color-default-lmstext);
+  height: auto;
+  font-size: 11.680473327636719px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Mulish;
+  font-weight: 700;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group358 {
+  top: 56.73639678955078px;
+  left: 97.61541748046875px;
+  width: 98.44970703125px;
+  height: 98.44967651367188px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.homework3-ellipse10 {
+  top: 2px;
+  right: 2px;
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+}
+.homework3-group357 {
+  top: 33.370574951171875px;
+  left: 26.6983585357666px;
+  width: 44.769466400146484px;
+  height: 37.329280853271484px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text124 {
+  top: 20.64289093017578px;
+  left: 8.34320068359375px;
+  color: var(--dl-color-default-lmstext);
+  width: 28px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text126 {
+  color: var(--dl-color-default-lmstext);
+  width: 45px;
+  height: auto;
+  position: absolute;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-ellipse11 {
+  top: 1px;
+  right: 1px;
+  width: 47px;
+  height: 56px;
+  position: absolute;
+  border-color: rgba(36, 37, 52, 1);
+  border-style: solid;
+  border-width: 0.834319531917572px;
+}
+.homework3-text128 {
+  top: 110.74940490722656px;
+  left: 45.05328369140625px;
+  color: var(--dl-color-default-lmstext);
+  width: 28px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-group355 {
+  top: 89.27328491210938px;
+  left: 207.74554443359375px;
+  width: 65.91123962402344px;
+  height: 38.37869644165039px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text130 {
+  top: 21.692306518554688px;
+  left: 5.00592041015625px;
+  color: var(--dl-color-default-lmstext);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 10.011834144592285px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 18.355030059814453px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text132 {
+  color: rgba(55, 65, 81, 1);
+  width: 66px;
+  height: auto;
+  position: absolute;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-text133 {
+  color: var(--dl-color-default-lmstext);
+  font-weight: 800;
+}
+.homework3-group359 {
+  top: 90.10651397705078px;
+  left: 28.36688232421875px;
+  width: 55.89940643310547px;
+  height: 21.69230842590332px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-text135 {
+  top: 0.0009765625px;
+  color: var(--dl-color-default-lmstext);
+  width: 45px;
+  height: auto;
+  position: absolute;
+  font-size: 20.02366828918457px;
+  font-style: ExtraBold;
+  text-align: center;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 21.69230842590332px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homework3-remixiconslinesystemarrowupline {
+  top: 0.000002302361735928571px;
+  left: 34.207096099853516px;
+  width: 21.69230842590332px;
+  height: 21.69230842590332px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.homework3-group09 {
+  top: 0px;
+  left: 0px;
+  width: 21.69230842590332px;
+  height: 21.69230842590332px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.homework3-vector22 {
+  top: 3.6151130199432373px;
+  left: 3.815952777862549px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+}
+.homework3-rectangle90 {
+  top: 201.07101440429688px;
+  left: 297.8520812988281px;
+  width: 34px;
+  height: 5px;
+  position: absolute;
+  box-sizing: content-box;
+  border-radius: 3.337278127670288px;
+}
+.homework3-frame-footer1 {
+  gap: 24px;
+  display: flex;
+  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(0, 0, 0, 0.05999999865889549);
+  border-style: solid;
+  border-width: 1px 0 0;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homework3-content-wrapper1 {
+  gap: 223px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.homework3-content-wrapper2 {
+  gap: 48px;
+  display: flex;
+  align-items: flex-end;
+}
+.homework3-text137 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-text139 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-text141 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-text143 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  height: auto;
+  text-align: left;
+  line-height: 22px;
+}
+.homework3-text145 {
+  color: rgba(0, 0, 0, 0.8799999952316284);
+  width: 1201px;
+  height: auto;
+  align-self: stretch;
+  text-align: right;
+  line-height: 22px;
+}
