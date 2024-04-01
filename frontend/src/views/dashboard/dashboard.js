@@ -59,7 +59,7 @@ const Dashboard = (props) => {
             </div>
             <div className="dashboard-frame-menu">
               <div className="dashboard-menu-items">
-                <Link to="/" className="dashboard-navlink">
+                <Link to="/dashboard" className="dashboard-navlink">
                   <div className="dashboard-menu-item-inline-navigation-item">
                     <img
                       alt="IconDashboardOutlinedI529"
@@ -71,7 +71,7 @@ const Dashboard = (props) => {
                     </span>
                   </div>
                 </Link>
-                <Link to="/" className="dashboard-navlink1">
+                <Link to="/mycourses" className="dashboard-navlink1">
                   <div className="dashboard-menu-item-inline-navigation-item1">
                     <img
                       alt="IconDatabaseOutlinedI529"
@@ -107,7 +107,7 @@ const Dashboard = (props) => {
                     </span>
                   </div>
                 </Link>
-                <Link to="/" className="dashboard-navlink4">
+                <Link to="/Calendar" className="dashboard-navlink4">
                   <div className="dashboard-menu-item-inline-navigation-item4">
                     <img
                       alt="IconCalendarOutlinedI529"

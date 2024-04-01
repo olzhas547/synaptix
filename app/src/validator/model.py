@@ -4,13 +4,15 @@ from datetime import datetime
 
 class UserBase(BaseModel):
     email: str
-    first_name: str
-    last_name: str
+    #first_name: str
+    #last_name: str
+    fullName: str
     username: str
-    is_teacher: bool
+    role: str
 
 class UserCreate(UserBase):
     password: str
+    confirmPassword: str
 
 class User(UserBase):
     id: int
@@ -48,3 +50,10 @@ class HomeworkCreate(BaseModel):
 
 class Homework(HomeworkCreate):
     id: int
+
+class CourseReview(BaseModel):
+    id: int
+    user_id: int
+    stars: int
+    text: str
+    course_id: int

@@ -20,6 +20,13 @@ user_homework_association = Table(
     Column('homework_id', Integer, ForeignKey('users.id'))
 )
 
+user_meeting_association = Table(
+    'user_meeting',
+    Base.metadata,
+    Column('user_id', Integer, ForeignKey('homeworks.id')),
+    Column('meeting_id', Integer, ForeignKey('meetings.id'))
+)
+
 
 class User(Base):
     __tablename__ = "users"
@@ -36,6 +43,7 @@ class User(Base):
 
     items = relationship("Course", secondary=user_course_association, back_populates="owner")
     homeworks = relationship("Homework", secondary=user_homework_association, back_populates="owner")
+    meetings = relationship("Meeting", secondary=user_meeting_association, back_populaters="owner")
 
 
 class Course(Base):
@@ -67,7 +75,39 @@ class Homework(Base):
     course_id = Column(Integer, ForeignKey("courses.id"))
     
     owner = relationship("User", secondary=user_homework_association, back_populates="homeworks")
+
+class CourseReview(Base):
+    __tablename__ = "coursereviews"
     
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer), ForeignKey("users.id")
+    stars = Column(Integer)
+    text = Column(String)
+    course_id = Column(Integer, ForeignKey("courses.id"))
+
+class Chat(Base):
+    __tablename__ = "chats"
+    
+    id = Column(Integer)
+    name = Column(String)
+
+class Meeting(Base):
+    __tablename__ = "meetings"
+    
+    id = Column(Integer, primary_key=True)
+    time = Column(DateTime)
+    chat_id = Column(Integer, ForeignKey("chats.id"))
+
+    owner = relationship("User", secondary=user_meeting_association, back_populates="meetings")
+    
+class Message(Base):
+    __tablename__ = "messages"
+    
+    id = Column(Integer, primary_key=True)
+    text = Column(String)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    time = Column(DateTime)
+    chat_id = Column(Integer, ForeignKey("chats.id"))
 Base.metadata.create_all(engine)
 print(Course.__table__.c)
 print(User.__table__.c)

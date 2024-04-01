@@ -144,6 +144,6 @@ def get_courses(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
     return result
 
 @router.get('course/{id}')
-def get_course(id: int, db: Session = Depends(get_db)):
+def get_course(id: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
     result = db.query(users.Course).filter(users.Course.id == id).first()
     return result

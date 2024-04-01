@@ -257,6 +257,7 @@
   display: flex;
   align-items: flex-start;
 }
+
 .signup-input-field09 {
   gap: 6px;
   width: 315px;
@@ -306,6 +307,7 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
 .signup-eye1 {
   top: 0px;
   left: 0px;
@@ -405,9 +407,9 @@
 }
 .signup-buttons {
   gap: 12px;
-  width: 200px;
+  width: 250px;
   display: flex;
-  padding: 0 24px;
+  margin: 24px 0;
   align-items: center;
   flex-shrink: 0;
   justify-content: center;

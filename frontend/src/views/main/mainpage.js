@@ -12,32 +12,32 @@ const MAINPAGE = (props) => {
         <title>MAINPAGE</title>
         <meta property="og:title" content="MAINPAGE" />
       </Helmet>
+
       <div className="mainpage-desktop1">
         <img
           alt="Rectangle40216314"
           src="/external/rectangle40216314-rlq-900h.png"
           className="mainpage-rectangle4021"
         />
-        <Link to="/" className="mainpage-text h3">
-          <span>Synaptix</span>
+
+        <Link to="/" className="mainpage-text h3" >
+          <span style={{color:'white', width:"110px"}}>Synaptix</span>
         </Link>
-        <span className="mainpage-text002 h3">
-          <span>Synaptix</span>
-        </span>
+
         <Link to="/" className="mainpage-text004 link">
-          <span>Home</span>
+          <span style={{color:'white'}}>Home</span>
         </Link>
         <Link to="/mycourses" className="mainpage-text006 link">
-          <span>Courses</span>
+          <span style={{color:'white'}}>Courses</span>
         </Link>
         <Link to="/" className="mainpage-text008 link">
-          <span>Our Feature</span>
+          <span style={{color:'white'}}>Our Feature</span>
         </Link>
         <span className="mainpage-text010 btnText">
           <span>Login</span>
         </span>
         <Link to="/signin" className="mainpage-text012 btnText">
-          <span>JOIN US</span>
+          <span style={{color:'white' }}>JOIN Us</span>
         </Link>
         <Link to="/" className="mainpage-navlink">
           <img
@@ -48,13 +48,13 @@ const MAINPAGE = (props) => {
         </Link>
         <div className="mainpage-colmd6">
           <h5 className="mainpage-text014 h5">
-            <span>Welcome</span>
+            <span style={{color:'white'}}>Welcome</span>
           </h5>
           <h1 className="mainpage-text016">
-            <span>Study online with us!</span>
+            <span style={{color:'white'}}>Study online with us!</span>
           </h1>
           <h4 className="mainpage-text018">
-            <span>
+            <span style={{color:'white'}}>
               Synaptix is an educational website that integrates online courses,
               video conferences, and gamification.
             </span>
