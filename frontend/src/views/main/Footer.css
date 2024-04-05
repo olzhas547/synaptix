@@ -1,0 +1,17 @@
+.Footer-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #fff;
+
+
+}
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.foot-logo h4{
+    margin-left: 600px;
+}

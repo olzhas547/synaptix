@@ -1,0 +1,84 @@
+.Carousel-container {
+    max-width: 80%;
+    margin: 5% auto;
+}
+
+.Carousel_title {
+    margin-left: 5%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.product--image1,
+.product--image2,
+.product--image3,
+.product--image4 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    margin-top: 10px;
+}
+
+.text1 p,
+.text2 p,
+.text3 p,
+.text4 p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.text1 h1,
+.text2 h1,
+.text3 h1,
+.text4 h1 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text1 i,
+.text2 i,
+.text3 i,
+.text4 i {
+    font-style: italic;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sale-prise1,
+.sale-prise2,
+.sale-prise3,
+.sale-prise4 {
+    font-size: 24px;
+    color: #00a651;
+    margin-top: 10px;
+}
+
+.price1,
+.price2,
+.price3,
+.price4 {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    text-align: left;
+}

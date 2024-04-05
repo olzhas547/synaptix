@@ -1,0 +1,197 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    transition: transform 0.3s ease;
+    border: 1px solid silver;
+}
+.sidebar.open {
+    display: flex;
+    flex-direction: column;
+}
+#mainContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    display: flex;
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.shifted {
+    transform: translateX(250px);
+}
+
+header[role="banner"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+#burgerMenuButton {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+#searchBar {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[aria-label="Search"] {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: inherit;
+}
+
+nav[role="navigation"] {
+
+    width: 200px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
+nav[role="navigation"].open {
+    transform: translateX(0);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+li a:hover {
+    background-color: #ddd;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+.sidebar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: black;
+}
+
+.sidebar header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: silver;
+}
+
+.sidebar header button:focus {
+    outline: none;
+}
+
+/*.sidebar header button:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+.sidebar nav {
+    padding: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    font-family: SF Pro Text;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    color: #0958D9;
+    background-color: #BAE0FF;
+    border-radius: 5px;
+    width: 150px;
+
+}
+
+.sidebar main {
+    margin-left: 250px;
+    padding: 0;
+}
+
+
+header {
+    background-color: #444;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+
+header button:focus {
+    outline: none;
+}
+
+/*header button:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+header input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+header button[aria-label="Search"] {
+    background-color: #ffffff;
+    padding: 1px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+}
+
+header button[aria-label="Search"]:hover {
+    padding: 1%;
+}
+
+

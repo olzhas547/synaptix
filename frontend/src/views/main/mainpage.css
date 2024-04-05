@@ -1,5 +1,5 @@
 .mainpage-container {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   overflow: auto;
   min-height: 100vh;

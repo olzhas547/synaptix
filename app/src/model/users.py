@@ -23,7 +23,7 @@ user_homework_association = Table(
 user_meeting_association = Table(
     'user_meeting',
     Base.metadata,
-    Column('user_id', Integer, ForeignKey('homeworks.id')),
+    Column('user_id', Integer, ForeignKey('users.id')),
     Column('meeting_id', Integer, ForeignKey('meetings.id'))
 )
 
@@ -33,17 +33,16 @@ class User(Base):
 
     id = Column(Integer, primary_key=True)
     email = Column(String, unique=True, index=True)
-    first_name = Column(String)
-    last_name = Column(String)
+    fullName = Column(String)
     username = Column(String, unique=True, index=True)
     hashed_password = Column(String)
-    is_teacher = Column(Boolean)
+    role = Column(String)
     is_active = Column(Boolean, default=True)
 
 
     items = relationship("Course", secondary=user_course_association, back_populates="owner")
     homeworks = relationship("Homework", secondary=user_homework_association, back_populates="owner")
-    meetings = relationship("Meeting", secondary=user_meeting_association, back_populaters="owner")
+    meetings = relationship("Meeting", secondary=user_meeting_association, back_populates="owner")
 
 
 class Course(Base):
@@ -88,7 +87,7 @@ class CourseReview(Base):
 class Chat(Base):
     __tablename__ = "chats"
     
-    id = Column(Integer)
+    id = Column(Integer, primary_key=True)
     name = Column(String)
 
 class Meeting(Base):
@@ -108,6 +107,5 @@ class Message(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     time = Column(DateTime)
     chat_id = Column(Integer, ForeignKey("chats.id"))
+    
 Base.metadata.create_all(engine)
-print(Course.__table__.c)
-print(User.__table__.c)

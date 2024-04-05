@@ -23,9 +23,8 @@ function Signup() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(formData)
         try {
-            const response = await axios.post('http://localhost:8000/api/sign-up', formData);
+            const response = await axios.post('http://localhost:8000/api/login', formData);
             console.log(response.data);
         } catch (error) {
             console.error('Error:', error);
@@ -59,6 +58,15 @@ function Signup() {
                                     onChange={handleChange}
                                 />
                             </div>
+
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last name"
+                                className="signup-input-field02"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                            />
                         </div>
                         <div className="signup-input-field03">
                             <span className="signup-text04 BodyMedium400">
@@ -95,9 +103,8 @@ function Signup() {
                                     name="role"
                                     value={formData.role}
                                     onChange={handleChange}
-className="signup-text10 BodyLarge400"
-                                    style={{ width: '90%' }}
-                                >
+                                    className="signup-text10 BodyLarge400"
+                                    style={{ width: '90%' }}>
                                     <option value="teacher">Teacher</option>
                                     <option value="student">Student</option>
                                 </select>
@@ -138,15 +145,18 @@ className="signup-text10 BodyLarge400"
                             </div>
                         </div>
                         <button type="submit" className="signup-buttons">
+
                             <span className="signup-text20 ButtonM">
-                                <span style={{ cursor: 'pointer' }}>Create account</span>
+                                <span style={{ cursor: 'pointer' }}>Create account →</span>
                             </span>
-                            <div className="signup-arrow-right">{/* Arrow icons */}</div>
+                            <div className="signup-arrow-right"></div>
+
                         </button>
                     </form>
                 </div>
             </div>
-            <Link to="/SignIn" className="signup-buttons1">
+
+            <Link to="/" className="signup-buttons1">
                 <span className="signup-text22 ButtonM">
                     <span>Log in</span>
                 </span>
@@ -166,7 +176,8 @@ className="signup-text10 BodyLarge400"
                     alt="Rectangle14085718"
                     className="signup-rectangle1408"
                 />
-<img
+
+                <img
                     src="/external/pexelscottonbrostudio406514315718-sgn-200w.png"
                     alt="pexelscottonbrostudio406514315718"
                     className="signup-pexelscottonbrostudio40651431"

@@ -1,133 +1,139 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
+import axios from 'axios';
+import Cookies from "js-cookie";
+import './signin.css';
 
-import { Helmet } from 'react-helmet'
+function Signin() {
+  const [formData, setFormData] = useState({
+    username: '',
+    password: '',
+  });
 
-import './signin.css'
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+  const headers = {
+      'accept': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded'
+    };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const form_data = new FormData()
+      form_data.append("username", formData['username'])
+      form_data.append("password", formData['password'])
+      const response = await axios.post('http://localhost:8000/api/login', form_data, headers);
+      Cookies.set("token", response.data.access_token);
+      console.log(response.data.access_token);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-const Signin = (props) => {
   return (
-    <div className="signin-container">
-      <Helmet>
-        <title>signin</title>
-        <meta property="og:title" content="signing" />
-      </Helmet>
-      <div className="signin-signin">
-        <div className="signin-loan1"></div>
-        <span className="signin-text BodyMedium400">
-          <span>Don’t have account?</span>
-        </span>
-        <Link to="/signup" className="signin-buttons">
-          <span className="signin-text02 ButtonM">
-            <span>Create Account</span>
-          </span>
-        </Link>
-        <div className="signin-form">
-          <span className="signin-text04 Heading02">
-            <span>Sign in to your account</span>
-          </span>
-          <div className="signin-from">
-            <div className="signin-from1">
-              <div className="signin-input-field">
-                <span className="signin-text06 BodyMedium400">
-                  <span>Email</span>
-                </span>
-                <input
-                  type="text"
-                  placeholder="Username or email address..."
-                  className="signin-input-field1"
-                />
-              </div>
-              <div className="signin-input-field2">
-                <span className="signin-text08 BodyMedium400">
-                  <span>Password</span>
-                </span>
-                <div className="signin-input-field3">
-                  <span className="signin-text10 BodyLarge400">
-                    <span>Password</span>
-                  </span>
-                  <div className="signin-eye">
-                    <div className="signin-eye1">
-                      <img
-                        src="/external/vectori571-bmp3.svg"
-                        alt="VectorI571"
-                        className="signin-vector"
-                      />
-                      <img
-                        src="/external/vectori571-ejef.svg"
-                        alt="VectorI571"
-                        className="signin-vector1"
-                      />
-                    </div>
-                  </div>
+      <div className="signin-container">
+        <Helmet>
+          <title>Sign In</title>
+          <meta property="og:title" content="Sign In"/>
+        </Helmet>
+        <div className="signin-signin">
+          {/* ... */}
+          <div className="signin-form" role="form" aria-label="Sign in form">
+            <h1 className="signin-text04 Heading02">
+              Sign in to your account
+            </h1>
+            <form className="signin-from" onSubmit={handleSubmit}>
+              <div className="signin-from1">
+                <div className="signin-input-field">
+                  <label className="signin-text06 BodyMedium400" htmlFor="signin-input-email">
+                    Email
+                  </label>
+                  <input
+                      type="text"
+                      placeholder="Username or email address..."
+                      className="signin-input-field1"
+                      name="username"
+                      value={formData.email}
+                      onChange={handleChange}
+                      id="signin-input-email"
+                      tabIndex="0"
+                  />
+                </div>
+                <div className="signin-input-field2">
+                  <label className="signin-text08 BodyMedium400" htmlFor="signin-input-password">
+                    Password
+                  </label>
+                  <input
+                      type="password"
+                      placeholder="Password..."
+                      className="signin-input-field1"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleChange}
+                      id="signin-input-password"
+                      tabIndex="0"
+                  />
                 </div>
               </div>
-            </div>
-            <div className="signin-btn">
-              <Link to="/dashboard" className="signin-buttons1">
-                <span className="signin-text12 ButtonM">
-                  <span>Sign In</span>
-                </span>
-                <div className="signin-arrow-right">
-                  <div className="signin-arrow-right1">
-                    <img
-                      src="/external/vectori571-5ap8.svg"
-                      alt="VectorI571"
-                      className="signin-vector2"
-                    />
-                    <img
-                      src="/external/vectori571-45yc.svg"
-                      alt="VectorI571"
-                      className="signin-vector3"
-                    />
-                  </div>
-                </div>
-              </Link>
-            </div>
+
+              <div className="signin-btn">
+                <Link to='/sidebar'>
+                  <button type="submit" onClick={handleSubmit} style={{color:"white"}} className="signin-buttons1" tabIndex="0">
+                    Sign In →
+                  </button>
+                </Link>
+              </div>
+            </form>
+          </div>
+          {/* ... */}
+          <img
+              src="/external/rectangle66345718-3df8-700w.png"
+              alt="Rectangle66345718"
+              className="signup-rectangle6634"
+          />
+          <span className="signup-text24 btnText">
+                <span>Login</span>
+            </span>
+          <div className="signup-group1000002793">
+            <img
+                src="/external/rectangle14085718-7zw-400h.png"
+                alt="Rectangle14085718"
+                className="signup-rectangle1408"
+            />
+
+            <img
+                src="/external/pexelscottonbrostudio406514315718-sgn-200w.png"
+                alt="pexelscottonbrostudio406514315718"
+                className="signup-pexelscottonbrostudio40651431"
+            />
+          </div>
+          <div className="signup-group1000002792">
+            <img
+                src="/external/pexelscottonbrostudio406514315718-htf-300w.png"
+                alt="pexelscottonbrostudio406514315718"
+                className="signup-pexelscottonbrostudio406514311"
+            />
+          </div>
+
+
+          <div className="signin-signup" role="navigation" aria-label="Sign up navigation">
+            <p className="signin-text BodyMedium400">
+              Don’t have account?
+            </p>
+            <Link to="/signup" className="signin-buttons" tabIndex="0">
+                        <span className="signin-text02 ButtonM">
+                            Create Account
+                        </span>
+            </Link>
           </div>
         </div>
-        <img
-          src="/external/rectangle66355718-kxwg-700w.png"
-          alt="Rectangle66355718"
-          className="signin-rectangle6635"
-        />
-        <div className="signin-loan2"></div>
-        <div className="signin-group1000002794">
-          <span className="signin-text14">
-            <span>Центр событий</span>
-          </span>
-          <img
-            src="/external/rectangle14085718-du8l-400h.png"
-            alt="Rectangle14085718"
-            className="signin-rectangle1408"
-          />
-          <img
-            src="/external/rectangle14095718-hrqin-300w.png"
-            alt="Rectangle14095718"
-            className="signin-rectangle1409"
-          />
-          <img
-            src="/external/pexelscottonbrostudio406514315718-emfg-200w.png"
-            alt="pexelscottonbrostudio406514315718"
-            className="signin-pexelscottonbrostudio40651431"
-          />
-        </div>
-        <div className="signin-group1000002795">
-          <span className="signin-text16">
-            <span>Центр событий</span>
-          </span>
-          <img
-            src="/external/pexelscottonbrostudio406514315718-aa6-300w.png"
-            alt="pexelscottonbrostudio406514315718"
-            className="signin-pexelscottonbrostudio406514311"
-          />
-        </div>
-        <span className="signin-text18 h3">
-          <span>Synaptix</span>
-        </span>
       </div>
-    </div>
-  )
+  );
 }
 
-export default Signin
+export default Signin;

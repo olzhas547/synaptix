@@ -96,9 +96,8 @@ def sign_up(user: model.UserCreate, db: Session = Depends(get_db)):
     db_user = users.User(
         email=user.email, 
         hashed_password=f"{salt}${hashed_password}", 
-        is_teacher=user.is_teacher,
-        first_name = user.first_name,
-        last_name = user.last_name,
+        role=user.role,
+        fullName = user.fullName,
         username = user.username
         )
     print(f"0: {db_user}")

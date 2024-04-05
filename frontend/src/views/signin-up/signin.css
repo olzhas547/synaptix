@@ -202,8 +202,9 @@
   justify-content: space-between;
 }
 .signin-buttons1 {
+  height: 50px;
   gap: 12px;
-  width: 200px;
+  width: 250px;
   display: flex;
   padding: 0 24px;
   align-items: center;
@@ -320,6 +321,7 @@
 }
 .signin-group1000002795 {
   top: 295.0000305175781px;
+  border-radius: 30px;
   left: 174px;
   width: 295px;
   height: 362px;

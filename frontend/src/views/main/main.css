@@ -1,5 +1,5 @@
 .page-container {
-  width: 100%;
+
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 .page-mainpage {
-  width: 100%;
+
   height: auto;
   display: flex;
   align-items: flex-start;
@@ -647,11 +647,8 @@
 .page-frame1000002684 {
   width: 1440px;
   height: 572px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 0;
+
+
 }
 .page-frame171 {
   gap: 32.13190460205078px;
@@ -711,13 +708,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.page-frame162 {
-  gap: 16.06595230102539px;
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
 .page-frame160 {
   gap: 16.132177352905273px;
   width: 1223.0206298828125px;
@@ -1772,6 +1763,7 @@
   border-width: 1px;
   border-radius: 24px;
   flex-direction: column;
+  cursor: pointer;
 }
 .page-text109 {
   color: rgba(255, 255, 255, 1);
@@ -2346,19 +2338,6 @@
   width: 3px;
   height: 3px;
   position: absolute;
-}
-.page-frame-footer1 {
-  gap: 24px;
-  width: 1440px;
-  display: flex;
-  padding: 24px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: rgba(0, 0, 0, 0.05999999865889549);
-  border-style: solid;
-  border-width: 1px 0 0;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 1);
 }
 .page-content-wrapper {
   gap: 223px;
