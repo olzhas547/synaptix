@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Redirect,
 } from 'react-router-dom'
 
 import './style.css'
@@ -31,7 +31,6 @@ import Dashboard from "./views/teacher/mycourses/Dashboard";
 // import Webinar from './views//teacher/webinar/webinar'
 // import Createwebinar from './views//teacher/webinar/createwebinar'
 import MAINPAGE from "./views/main/mainpage";
-
 import Signup from './views//signin-up/signup'
 import Signin from './views/signin-up/signin'
 import NotFound from "./views/main/not-found.js";
@@ -44,80 +43,102 @@ import Sidebar from "./views/teacher/Sidebar/Sidebar";
 import MyCourse from "./views/teacher/mycourses/MyCourse";
 import main from "./views/main/Main";
 import Main from "./views/main/Main";
+import AddTest from "./views/teacher/mycourses/AddTest";
+import AddHomework from "./views/teacher/mycourses/AddHomework";
+import PreviewTest from "./views/teacher/mycourses/PreviewTest";
+
 const App = () => {
-  return (
-    // <Router>
-    //   <Switch>
-    //     <Route component={MAINPAGE} exact path="/" />
-    //     <Route component={Main} exact path="/Main" />
-    //     <Route component={Signup} exact path="/signup" />
-    //     <Route component={Signin} exact path="/signin" />
-    //     <Route component={Sidebar} exact path="/Sidebar" />
-    //     <Route component={CreateCourse} exact path="/CreateCourse" />
-    //     <Route component={Dashboard} exact path="/Dashboard" />
-    //
-    //
-    //     {/*<Route component={Explore} exact path="/explore" />*/}
-    //     {/*<Route component={uxui} exact path="/uxui" />*/}
-    //     {/*<Route component={About} exact path="/about" />*/}
-    //     {/*<Route component={mycourses} exact path="/mycourses" />*/}
-    //     {/*<Route component={cinema4d} exact path="/cinema4d" />*/}
-    //     {/*<Route component={discussions} exact path="/discussions" />*/}
-    //     {/*<Route component={resources} exact path="/resources" />*/}
-    //     {/*<Route component={transcripts} exact path="/transcripts" />*/}
-    //     {/*<Route component={homework3} exact path="/homework" />*/}
-    //     {/*<Route component={Test} exact path="/test" />*/}
-    //     {/*<Route component={testResult} exact path="/testresult" />*/}
-    //     {/*<Route component={Coursemodules} exact path="/coursemodules" />*/}
-    //     {/*<Route component={Upload} exact path="/upload" />*/}
-    //     {/*<Route component={Mycourse} exact path="/mycourse" />*/}
-    //     {/*<Route component={Addhomework} exact path="/addhomework" />*/}
-    //     {/*<Route component={Previewtest} exact path="/preview" />*/}
-    //     {/*<Route component={Addtest} exact path="/addtest" />*/}
-    //     {/*<Route component={Calendar} exact path="/Calendar" />*/}
-    //     {/*<Route component={DashboardTeacher} exact path="/dashboard-teacher" />*/}
-    //     {/*<Route component={Webinar} exact path="/Webinar" />*/}
-    //     {/*<Route component={Createwebinar} exact path="/createwebinar" />*/}
-    //     {/*<Route component={chat} exact path="/chat" />*/}
-    //     {/*<Route component={certificate} exact path="/certificate" />*/}
-    //     {/*<Route component={upcomingwebinars} exact path="/upcomingwebinars" />*/}
-    //     <Route component={howto} exact path="/howto" />
-    //     <Route component={NotFound} path="**" />
-    //     <Redirect to="**" />
-    //   </Switch>
-    // </Router>
-      <Router>
-        <Switch>
-          <Route component={MAINPAGE} exact path="/" />
-          <Route component={Main} exact path="/Main" />
-          <Route component={Signup} exact path="/signup" />
-          <Route component={Signin} exact path="/signin" />
-          <Route component={Sidebar} exact path={"/Sidebar"}/>
+    return (
+        // <Router>
+        //   <Switch>
+        //     <Route component={MAINPAGE} exact path="/" />
+        //     <Route component={Main} exact path="/Main" />
+        //     <Route component={Signup} exact path="/signup" />
+        //     <Route component={Signin} exact path="/signin" />
+        //     <Route component={Sidebar} exact path="/Sidebar" />
+        //     <Route component={CreateCourse} exact path="/CreateCourse" />
+        //     <Route component={Dashboard} exact path="/Dashboard" />
+        //
+        //
+        //     {/*<Route component={Explore} exact path="/explore" />*/}
+        //     {/*<Route component={uxui} exact path="/uxui" />*/}
+        //     {/*<Route component={About} exact path="/about" />*/}
+        //     {/*<Route component={mycourses} exact path="/mycourses" />*/}
+        //     {/*<Route component={cinema4d} exact path="/cinema4d" />*/}
+        //     {/*<Route component={discussions} exact path="/discussions" />*/}
+        //     {/*<Route component={resources} exact path="/resources" />*/}
+        //     {/*<Route component={transcripts} exact path="/transcripts" />*/}
+        //     {/*<Route component={homework3} exact path="/homework" />*/}
+        //     {/*<Route component={Test} exact path="/test" />*/}
+        //     {/*<Route component={testResult} exact path="/testresult" />*/}
+        //     {/*<Route component={Coursemodules} exact path="/coursemodules" />*/}
+        //     {/*<Route component={Upload} exact path="/upload" />*/}
+        //     {/*<Route component={Mycourse} exact path="/mycourse" />*/}
+        //     {/*<Route component={Previewtest} exact path="/preview" />*/}
+        //     {/*<Route component={Addtest} exact path="/addtest" />*/}
+        //     {/*<Route component={Calendar} exact path="/Calendar" />*/}
+        //     {/*<Route component={DashboardTeacher} exact path="/dashboard-teacher" />*/}
+        //     {/*<Route component={Webinar} exact path="/Webinar" />*/}
+        //     {/*<Route component={Createwebinar} exact path="/createwebinar" />*/}
+        //     {/*<Route component={chat} exact path="/chat" />*/}
+        //     {/*<Route component={certificate} exact path="/certificate" />*/}
+        //     {/*<Route component={upcomingwebinars} exact path="/upcomingwebinars" />*/}
+        //     <Route component={howto} exact path="/howto" />
+        //     <Route component={NotFound} path="**" />
+        //     <Redirect to="**" />
+        //   </Switch>
+        // </Router>
+        <Router>
+            <Switch>
+                <Route component={Main} exact path="/"/>
+                {/*<Route component={MAINPAGE} exact path="/"/>*/}
 
-          <Route path="/Dashboard">
-            <Sidebar>
-              <Dashboard />
-            </Sidebar>
-          </Route>
-
-          <Route path="/CreateCourse">
-            <Sidebar>
-              <CreateCourse />
-            </Sidebar>
-          </Route>
-
-          <Route path="/MyCourse">
-          <Sidebar>
-            <MyCourse/>
-          </Sidebar>
-        </Route>
+                <Route component={Signup} exact path="/signup"/>
+                <Route component={Signin} exact path="/signin"/>
+                <Route component={Sidebar} exact path={"/Sidebar"}/>
 
 
-          <Route component={NotFound} path="**" />
-          <Redirect to="**" />
-        </Switch>
-      </Router>
-  )
+                <Route path="/Dashboard">
+                    <Sidebar>
+                        <Dashboard/>
+                    </Sidebar>
+                </Route>
+
+                <Route path="/CreateCourse">
+                    <Sidebar>
+                        <CreateCourse/>
+                    </Sidebar>
+                </Route>
+
+                <Route path="/MyCourse">
+                    <Sidebar>
+                        <MyCourse/>
+                    </Sidebar>
+                </Route>
+
+                <Route path="/AddHomework">
+                    <Sidebar>
+                        <AddHomework/>
+                    </Sidebar>
+                </Route>
+                <Route path="/AddTest">
+                    <Sidebar>
+                        <AddTest/>
+                    </Sidebar>
+                </Route>
+
+                <Route path="/PreviewTest">
+                    <Sidebar>
+                        <PreviewTest/>
+                    </Sidebar>
+                </Route>
+
+
+                <Route component={NotFound} path="**"/>
+                <Redirect to="**"/>
+            </Switch>
+        </Router>
+    )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('app'))

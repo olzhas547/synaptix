@@ -7,20 +7,22 @@ import { CiCalendar } from "react-icons/ci";
 import { BsCameraVideo } from "react-icons/bs";
 import { CiSettings } from "react-icons/ci";
 import { AiOutlineDatabase } from "react-icons/ai";
-
-
 import {GrLanguage} from "react-icons/gr";
 import {CiSearch} from "react-icons/ci";
 import {AiOutlineMenuFold} from "react-icons/ai";
 import {IoMdContact} from "react-icons/io";
 import {IoIosNotificationsOutline} from "react-icons/io";
-import img from './img/Book 4.png'
+import img from './img/Frame 1000002598@2x.png'
 import CreateCourse from "../mycourses/CreateCourse";
 import Dashboard from "../mycourses/Dashboard";
 import axios from "axios";
 import MyCourse from "../mycourses/MyCourse";
 import main from "../../main/Main";
 import Footer from "../../main/Footer";
+import Main from "../../main/Main";
+import AddTest from "../mycourses/AddTest";
+import AddHomework from "../mycourses/AddHomework";
+import PreviewTest from "../mycourses/PreviewTest";
 
 function Header(props) {
     const [currentLanguage, setCurrentLanguage] = useState('English');
@@ -45,7 +47,7 @@ function Header(props) {
     }
 
     return (
-        <header role="banner" className={props.isSidebarOpen ? "header-open" : ""}>
+        <header role="banner" className={props.isSidebarOpen ? "header-open" : ""} style={{margin:'0',padding:'0'}}>
             <button
                 id="burgerMenuButton"
                 aria-controls="sidebar"
@@ -117,7 +119,7 @@ function Sidebar(props) {
                     tabIndex="0">
 
                     <div className="Logo" style={{display: 'flex'}}>
-                       <Link to="/Main" style={{display:"flex"}}><img src={img} width={30} height={30} style={{backgroundColor: "#F7F7FC", marginTop: '5px'}}
+                       <Link to="/" style={{display:"flex"}}><img src={img} width={30} height={30} style={{backgroundColor: "#F7F7FC", borderRadius:'4.8px'}}
                              alt="Synaptix logo"/><h1 style={{marginLeft: '0.5rem'}}>Synaptix</h1></Link>
                     </div>
                     <ul>
@@ -148,6 +150,9 @@ function Sidebar(props) {
                         <Route path="/CreateCourse" component={CreateCourse}/>
                         <Route path="/Dashboard" component={Dashboard}/>
                         <Route path="/MyCourse" component={MyCourse}/>
+                        <Route path="/AddHomework" component={AddHomework}/>
+                        <Route path="/AddTest" component={AddTest}/>
+                        <Route path="/PreviewTest" component={PreviewTest}/>
 
                     </Switch>
                 </main>

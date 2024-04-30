@@ -46,7 +46,7 @@ const Main = (props) => {
               </div>
             </div>
           </div>
-          <Link to="/signin" className="page-navlink">
+          <Link to="/signup" className="page-navlink">
             <div className="page-frame6356157 button">
               <img
                 alt="accountcirclesvgrepocom10208"
@@ -118,7 +118,7 @@ const Main = (props) => {
               <span>Cart</span>
             </span>
           </div>
-          <Link to="/signup" className="page-text009">
+          <Link to="/signin" className="page-text009">
             <span>Log in</span>
           </Link>
         </div>

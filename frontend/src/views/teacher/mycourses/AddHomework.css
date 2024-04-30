@@ -1,0 +1,179 @@
+.AddHomework-container{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 3rem;
+}
+.AddHomework-title{
+    margin: 1% 5% 2%;
+}
+
+.AddHomework-form{
+    width: 70%;
+    background-color: #fff;
+    margin-left: 5%;
+    border-radius: 12px;
+}
+.form-group-up{
+    background-color: white;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+.AddHomework-inside-container{
+    display: flex;
+    width: 100%;
+}
+/**/
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease;
+}
+/**/
+.AddHomework-button{
+    text-align: center;
+    border-radius: 10px;
+}
+.AddHomework-button button{
+    width: 201.43px;
+    height: 38.14px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #1677FF;
+    border-radius: 10px;
+    border: 1px solid #1677FF;
+    cursor: pointer;
+    margin-top: 15px;
+}
+/**/
+/* Стили для обертки */
+.toolbarClassName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.toolbarClassName.open {
+    height: auto;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+.wrapperClassName {
+    margin-top: 10px;
+    border: 1px solid rgb(231, 221, 221);
+
+}
+
+.editorClassName {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    min-height: 150px;
+    font-family: Arial, sans-serif;
+
+}
+
+.editorClassName:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.editorClassName .DraftEditor-root {
+    min-height: 100px;
+}
+
+.editorClassName .public-DraftEditorPlaceholder-root {
+    color: #999;
+}
+
+.editorClassName .public-DraftEditor-content {
+    line-height: 1.6;
+}
+
+/*video*/
+.video-container {
+    position: relative;
+    width: 320px;
+    height: 240px;
+}
+.custom-file-upload:hover {
+    background-color: initial;
+    cursor: pointer;
+}
+.close-btn:hover{
+    background-color: initial;
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+/*date*/
+.date-input-container {
+
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.date-input-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.date-input-container input[type="date"] {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.date-input-container input[type="date"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+
+/**/
+.button-publish{
+    text-align: right;
+}
+.button-publish button{
+    width: 75.17px;
+    height: 38.14px;
+    font-size: 16px;
+    background-color:  #1677FF;
+    color: #FFFFFF;
+    border-radius: 6.04px;
+    border: 1px solid #1677FF;
+    cursor: pointer;
+    margin-top: 15px;
+}

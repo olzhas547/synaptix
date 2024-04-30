@@ -1,7 +1,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 100%;
     transition: transform 0.3s ease;
     border: 1px solid silver;
 }
@@ -50,7 +50,7 @@ header[role="banner"] {
 button[aria-label="Search"] {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
     color: inherit;
 }
@@ -103,12 +103,13 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px;
     color: black;
 }
 
 .sidebar header button {
     background: none;
+    padding: 20px 10px ;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -159,7 +160,7 @@ main {
 
 header {
     background-color: #444;
-    padding: 10px 0;
+    padding: 10px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,5 +194,6 @@ header button[aria-label="Search"] {
 header button[aria-label="Search"]:hover {
     padding: 1%;
 }
+
 
 

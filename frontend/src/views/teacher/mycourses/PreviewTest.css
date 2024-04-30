@@ -1,0 +1,14 @@
+.PreviewTest-container{
+    width: 95%;
+    height: 90vh;
+    padding: 3rem;
+    background-color: #F5F5F5;
+}
+.Preview-inside{
+    margin: 2rem;
+
+}
+.Preview-inside-in{
+    background-color: #FFFFFF;
+    width: 100%;
+}

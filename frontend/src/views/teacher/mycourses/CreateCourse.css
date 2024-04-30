@@ -1,10 +1,288 @@
-.Form-All{
-    margin-top: 20px;
-    padding: 3rem;
-    background-color: #F5F5F5;
+/* CreateCourse.css */
+.Form-All {
     width: 100%;
-}
-form{
-    background-color: white;
+    height: 100%;
+    margin: 0 auto;
     padding: 3rem;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
 }
+
+.Form-All h1,
+.Form-All h2 {
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.dropzone-container {
+    margin-top: 10px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.last-dropzone {
+    margin-top: 50px;
+}
+
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.Creating-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1677FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.Creating-button {
+    text-align: right;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.first_form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.second_form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.third_form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/**/
+
+/* CSS for the toggle switch */
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.toggle-switch input{
+    margin-top: 50px;
+}
+.toggle-switch-checkbox {
+    display: none;
+}
+
+.toggle-switch-label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #E6F4FF;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.toggle-switch-label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: .4s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label {
+    background-color: #1677FF;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label:before {
+    transform: translateX(30px);
+}
+
+.toggle-switch-label:after {
+    position: absolute;
+    /*content:'Off';*/
+    display: block;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 23px;
+    font-size: 14px;
+    color: silver;
+    transition: .4s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label:after {
+    /*content:'On';*/
+    transform: translateX(30px);
+}
+
+/**/
+
+.course-pricing {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.options label:hover {
+    color: #E6F4FF;
+}
+
+.options label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.options label input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.options label input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.course-price-input {
+    margin-top: 50px;
+    border-radius: 6px;
+}
+
+
+.input-group {
+    display: flex;
+}
+
+.input-group input[type='number'],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    color: #495057;
+    border-radius: 6px 0 0 6px;
+    margin-top: 10px;
+}
+
+.input-group select {
+    background-color: #e9ecef;
+    width: 60px;
+    border-radius: 0 6px 6px 0;
+}
+
+.Lecture-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid silver;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.Homework-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid silver;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.Lecture-container{
+    margin-top: 1rem;
+}
+.Homework-container{
+    margin-top: 1rem;
+}
+.Homework-up {
+    display: flex;
+    justify-content: space-between;
+
+}
+.Lecture-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+

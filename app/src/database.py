@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = 'postgresql://synaptix_admin:S3cretn0@localhost/synaptix_db'
+SQLALCHEMY_DATABASE_URL = 'postgresql://synaptix_admin:S3cretn0@postgres/synaptix_db'
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 

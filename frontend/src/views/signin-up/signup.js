@@ -147,7 +147,7 @@ function Signup() {
                         <button type="submit" className="signup-buttons">
 
                             <span className="signup-text20 ButtonM">
-                                <span style={{ cursor: 'pointer' }}>Create account →</span>
+                                <Link to='/CreateCourse'><span style={{ cursor: 'pointer' }}>Create account →</span></Link>
                             </span>
                             <div className="signup-arrow-right"></div>
 

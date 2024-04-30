@@ -213,8 +213,9 @@
   top: 13px;
   left: 18px;
   color: var(--dl-color-gray-500);
-  height: auto;
-  position: absolute;
+  width: 110%;
+  height: 45px;
+  /*position: absolute;*/
   text-align: left;
   line-height: 24px;
 }
@@ -292,8 +293,8 @@
   top: 12px;
   left: 18px;
   color: var(--dl-color-gray-500);
-  height: auto;
-  position: absolute;
+  height: 45px;
+  width: 400px;
   text-align: left;
   line-height: 24px;
 }
@@ -366,8 +367,8 @@
   top: 12px;
   left: 18px;
   color: var(--dl-color-gray-500);
-  height: auto;
-  position: absolute;
+  height: 45px;
+  width: 400px;
   text-align: left;
   line-height: 24px;
 }

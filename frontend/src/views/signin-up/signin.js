@@ -2,30 +2,30 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 import axios from 'axios';
-import Cookies from "js-cookie";
 import './signin.css';
+import Cookies from "js-cookie";
 
 function Signin() {
   const [formData, setFormData] = useState({
-    username: '',
+    email: '',
     password: '',
   });
-
+  const headers = {
+      'accept': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded'
+    };
   const handleChange = (event) => {
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
     });
   };
-  const headers = {
-      'accept': 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded'
-    };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const form_data = new FormData()
-      form_data.append("username", formData['username'])
+      form_data.append("username", formData['email'])
       form_data.append("password", formData['password'])
       const response = await axios.post('http://localhost:8000/api/login', form_data, headers);
       Cookies.set("token", response.data.access_token);
@@ -57,8 +57,8 @@ function Signin() {
                       type="text"
                       placeholder="Username or email address..."
                       className="signin-input-field1"
-                      name="username"
-                      value={formData.email}
+                      name="email"
+                      value={formData.username}
                       onChange={handleChange}
                       id="signin-input-email"
                       tabIndex="0"
@@ -82,7 +82,7 @@ function Signin() {
               </div>
 
               <div className="signin-btn">
-                <Link to='/sidebar'>
+                <Link to='/MyCourse'>
                   <button type="submit" onClick={handleSubmit} style={{color:"white"}} className="signin-buttons1" tabIndex="0">
                     Sign In →
                   </button>
