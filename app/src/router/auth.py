@@ -146,3 +146,195 @@ def get_courses(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
 def get_course(id: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
     result = db.query(users.Course).filter(users.Course.id == id).first()
     return result
+
+@router.get('student/dashboard/homeworks')
+def student_dashboard_homeworks():
+    return {
+        "homeworks": [
+            {"homework_name": "1. Design a brochure for a restaurant",
+             "course_name": "Graphic design",
+             "start_date": datetime(2024, 5, 10),
+             "end_date": datetime(2025, 5, 18),
+             "level": 3
+             },
+            {"homework_name": "2. Design a brochure for a project",
+             "course_name": "UX design",
+             "start_date": datetime(2024, 1, 11),
+             "end_date": datetime(2025, 12, 31),
+             "level": 2
+             },
+            {"homework_name": "3. Design a brochure for a movie",
+             "course_name": "Graphic design",
+             "start_date": datetime(2024, 3, 3),
+             "end_date": datetime(2025, 5, 6),
+             "level": 3
+             },
+            {"homework_name": "4. Design a brochure for a cafe",
+             "course_name": "UI design",
+             "start_date": datetime(2024, 4, 4),
+             "end_date": datetime(2025, 7, 9),
+             "level": 1
+             },
+            {"homework_name": "5. Design a brochure for a website",
+             "course_name": "UX design",
+             "start_date": datetime(2024, 3, 2),
+             "end_date": datetime(2025, 10, 11),
+             "level": 1
+             },
+            {"homework_name": "6. Design a brochure for a canteen",
+             "course_name": "UI design",
+             "start_date": datetime(2024, 5, 6),
+             "end_date": datetime(2025, 7, 8),
+             "level": 2
+             }
+            ]
+        }
+
+@router.get('student/dashboard/schedule')
+def student_dashboard_schedule(date: datetime):
+    return {
+        "date": date,
+        "events": [
+            {"name": "webinar",
+            "start_time": datetime(date.year, date.month, date.day, 16, 0, 0),
+            "end_time": datetime(date.year, date.month, date.day, 17, 0, 0),
+            "course_name": "Graphic design"
+            },
+            {"name": "webinar",
+            "start_time": datetime(date.year, date.month, date.day, 17, 0, 0),
+            "end_time": datetime(date.year, date.month, date.day, 18, 0, 0),
+            "course_name": "UX design"
+            },
+            {"name": "webinar",
+            "start_time": datetime(date.year, date.month, date.day, 18, 0, 0),
+            "end_time": datetime(date.year, date.month, date.day, 19, 0, 0),
+            "course_name": "UI design"
+            },
+            ]
+        }
+
+@router.get('student/dashboard/me')
+def student_dashboard_me():
+    return {
+        "fullname": "Sabina Omirzak",
+        "main": "sabina23@gmail.com",
+        "all_lectures": 110,
+        "visited_lectures": 75,
+        "all_hw": 25,
+        "completed_hw": 15,
+        "all_bonuses": 1000,
+        "actual_bonuses": 300,
+        "all_certificates": 10,
+        "completed_certificates": 8,
+        "streak": 4
+        }
+
+@router.get('student/dashboard/rating')
+def student_dashboard_rating():
+    return {
+        "courses": [
+            {"course_name": "Graphic Design",
+             "ranks": [
+                 {"rank": 13,
+                  "student": "Azamat Qani",
+                  "score": 1001},
+                 {"rank": 14,
+                  "student": "Sabina Omirzak",
+                  "score": 987},
+                 {"rank": 15,
+                  "student": "Yerassyl Sharip",
+                  "score": 967},
+                 {"rank": 16,
+                  "student": "Aidos Askar",
+                  "score": 966},
+                 ]
+             },
+            {"course_name": "Graphic Design",
+             "ranks": [
+                 {"rank": 1,
+                  "student": "Yerassyl Sharip",
+                  "score": 1002},
+                 {"rank": 2,
+                  "student": "Sabina Omirzak",
+                  "score": 988},
+                 {"rank": 3,
+                  "student": "Azamat Qani",
+                  "score": 968},
+                 {"rank": 4,
+                  "student": "Aidos Askar",
+                  "score": 967},
+                 ]
+             },
+            {"course_name": "Graphic Design",
+             "ranks": [
+                 {"rank": 5,
+                  "student": "Aidos Askar",
+                  "score": 1003},
+                 {"rank": 6,
+                  "student": "Sabina Omirzak",
+                  "score": 989},
+                 {"rank": 7,
+                  "student": "Yerassyl Sharip",
+                  "score": 969},
+                 {"rank": 8,
+                  "student": "Azamat Qani",
+                  "score": 968},
+                 ]
+             }
+            ]
+        }
+
+@router.get('student/dashboard/my_scores')
+def student_dashboard_my_scores():
+    return {
+        "courses": [
+            {"course_name": "Graphic Design",
+             "ranks": [
+                 {"rank": 13,
+                  "student": "Azamat Qani",
+                  "score": 1001},
+                 {"rank": 14,
+                  "student": "Sabina Omirzak",
+                  "score": 987},
+                 {"rank": 15,
+                  "student": "Yerassyl Sharip",
+                  "score": 967},
+                 {"rank": 16,
+                  "student": "Aidos Askar",
+                  "score": 966},
+                 ]
+             },
+            {"course_name": "UX Design",
+             "ranks": [
+                 {"rank": 1,
+                  "student": "Yerassyl Sharip",
+                  "score": 1002},
+                 {"rank": 2,
+                  "student": "Sabina Omirzak",
+                  "score": 988},
+                 {"rank": 3,
+                  "student": "Azamat Qani",
+                  "score": 968},
+                 {"rank": 4,
+                  "student": "Aidos Askar",
+                  "score": 967},
+                 ]
+             },
+            {"course_name": "UI",
+             "ranks": [
+                 {"rank": 5,
+                  "student": "Aidos Askar",
+                  "score": 1003},
+                 {"rank": 6,
+                  "student": "Sabina Omirzak",
+                  "score": 989},
+                 {"rank": 7,
+                  "student": "Yerassyl Sharip",
+                  "score": 969},
+                 {"rank": 8,
+                  "student": "Azamat Qani",
+                  "score": 968},
+                 ]
+             }
+            ]
+        }

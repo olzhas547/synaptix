@@ -7,10 +7,9 @@ COPY ./requirements.txt /synaptix/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /synaptix/requirements.txt
 
 COPY ./app /synaptix/app
-COPY ./.env /synaptix/.env
 
 ENV PYTHONPATH "${PYTHONPATH}:/synaptix/app"
 
 WORKDIR /synaptix/app
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
