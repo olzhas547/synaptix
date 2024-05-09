@@ -122,29 +122,29 @@ const Main = (props) => {
             <span>Log in</span>
           </Link>
         </div>
-        <div className="page-category">
+        <div className="page-category" style={{cursor:'pointer'}}>
           <div className="page-frame103">
-            <div className="page-stack">
+            <div className="page-stack" style={{cursor:'pointer'}}>
               <img
                 alt="designpencilsvgrepocom10208"
                 src="/external/designpencilsvgrepocom10208-peud.svg"
                 className="page-designpencilsvgrepocom1"
               />
-              <span className="page-text011 golosreg">
-                <span>Design</span>
+              <span className="page-text011 golosreg" >
+                <span style={{cursor:'pointer'}}>Design</span>
               </span>
             </div>
-            <div className="page-stack1">
+            <div className="page-stack1" style={{cursor:'pointer'}}>
               <img
                 alt="targetsvgrepocom10208"
                 src="/external/targetsvgrepocom10208-b7n.svg"
                 className="page-targetsvgrepocom1"
               />
               <span className="page-text013 golosreg">
-                <span>Marketing</span>
+                <span style={{cursor:'pointer'}}>Marketing</span>
               </span>
             </div>
-            <div className="page-stack2">
+            <div className="page-stack2" style={{cursor:'pointer'}}>
               <img
                 alt="codesvgrepocom10208"
                 src="/external/codesvgrepocom10208-qx2t.svg"
@@ -154,7 +154,7 @@ const Main = (props) => {
                 <span>IT</span>
               </span>
             </div>
-            <div className="page-stack3">
+            <div className="page-stack3" style={{cursor:'pointer'}}>
               <img
                 alt="mathfinancesvgrepocom110208"
                 src="/external/mathfinancesvgrepocom110208-juu.svg"
@@ -164,36 +164,37 @@ const Main = (props) => {
                 <span>Finance</span>
               </span>
             </div>
-            <div className="page-stack4">
+            <div className="page-stack4" style={{cursor:'pointer'}}>
               <img
                 alt="managementsvgrepocom10208"
                 src="/external/managementsvgrepocom10208-gdx.svg"
                 className="page-managementsvgrepocom1"
               />
               <span className="page-text019 golosreg">
-                <span>Management</span>
+                <span style={{cursor:'pointer'}}>Management</span>
               </span>
             </div>
-            <div className="page-stack5">
+            <div className="page-stack5" style={{cursor:'pointer'}}>
               <img
                 alt="graphicdesignsvgrepocom10208"
                 src="/external/graphicdesignsvgrepocom10208-yh2.svg"
                 className="page-graphicdesignsvgrepocom1"
               />
               <span className="page-text021 golosreg">
-                <span>Science</span>
+                <span style={{cursor:'pointer'}}>Science</span>
               </span>
             </div>
-            <div className="page-stack6">
+            <div className="page-stack6" style={{cursor:'pointer'}}>
               <img
                 alt="mobilesvgrepocom10208"
                 src="/external/mobilesvgrepocom10208-s5wl.svg"
                 className="page-mobilesvgrepocom1"
               />
               <span className="page-text023 golosreg">
-                <span>Mobilography</span>
+                <span style={{cursor:'pointer'}}>Mobilography</span>
               </span>
             </div>
+
             <div className="page-stack7">
               <img
                 alt="languagesvgrepocom110209"
@@ -216,6 +217,8 @@ const Main = (props) => {
             </div>
           </div>
         </div>
+
+
         <div className="page-hero">
           <div className="page-content1">
             <div className="page-header1">
@@ -233,7 +236,7 @@ const Main = (props) => {
               <div className="page-frame36453">
                 <div className="page-frame6356143">
                   <span className="page-text033">
-                    <span>go to the courses</span>
+                  <Link to="/signup"><span>go to the courses</span></Link>
                   </span>
                 </div>
               </div>
@@ -263,6 +266,8 @@ const Main = (props) => {
             />
           </div>
         </div>
+
+
         <div className="page-frame237680">
           <Frame237679 rootClassName="frame237679-root-class-name"></Frame237679>
         </div>
@@ -304,7 +309,7 @@ const Main = (props) => {
               </span>
               <div className="page-ghostbtndefault">
                 <span className="page-text109">
-                  <span>i want to be author</span>
+                  <Link to="/signup" ><span>i want to be author</span></Link>
                 </span>
               </div>
             </div>

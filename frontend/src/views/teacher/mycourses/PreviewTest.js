@@ -1,6 +1,7 @@
 import React from 'react';
 import './PreviewTest.css'
-
+// import data from '../../teacher/Data Json/reacord.json'
+// import {test} from "@craco/craco/dist/lib/cra";
 function PreviewTest() {
     return (
         <div className="PreviewTest-container">
@@ -11,7 +12,12 @@ function PreviewTest() {
             </div>
 
             <div className="Preview-inside-in">
-
+                {/*{data.test.map(item => (*/}
+                {/*    <div key={item.id}>*/}
+                {/*        <h2>{item.type}</h2>*/}
+                {/*        <p>{item.text}</p>*/}
+                {/*    </div>*/}
+                {/*))}*/}
             </div>
 
         </div>

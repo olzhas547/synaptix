@@ -1,5 +1,4 @@
 .page-container {
-
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -7,7 +6,6 @@
   flex-direction: column;
 }
 .page-mainpage {
-
   height: auto;
   display: flex;
   align-items: flex-start;
@@ -528,7 +526,8 @@
   flex-direction: column;
 }
 .page-text029 {
-  color: var(--dl-color-gray-900);
+  width: 400px;
+  color: black;
   height: auto;
   font-size: 72px;
   align-self: stretch;
@@ -571,8 +570,12 @@
   padding: 13px 17px;
   position: absolute;
   align-items: flex-start;
+  justify-content: center;
   border-radius: 9px;
   background-color: rgba(22, 119, 255, 1);
+}
+.page-category span{
+  cursor: pointer;
 }
 .page-text033 {
   color: rgba(255, 255, 255, 1);

@@ -18,11 +18,12 @@ import Dashboard from "../mycourses/Dashboard";
 import axios from "axios";
 import MyCourse from "../mycourses/MyCourse";
 import main from "../../main/Main";
-import Footer from "../../main/Footer";
+import Footer from "../Footer/Footer";
 import Main from "../../main/Main";
 import AddTest from "../mycourses/AddTest";
 import AddHomework from "../mycourses/AddHomework";
 import PreviewTest from "../mycourses/PreviewTest";
+import AddLecture from "../mycourses/AddLecture";
 
 function Header(props) {
     const [currentLanguage, setCurrentLanguage] = useState('English');
@@ -53,7 +54,7 @@ function Header(props) {
                 aria-controls="sidebar"
                 aria-expanded={props.isSidebarOpen}
                 onClick={props.toggleSidebar}>
-                <AiOutlineMenuFold style={{marginLeft: '200px'}}/>
+                <AiOutlineMenuFold style={{marginLeft: '250px'}}/>
             </button>
 
 
@@ -61,7 +62,9 @@ function Header(props) {
                  style={{
                      border: "1px solid silver",
                      borderRadius: "5px",
-                     width: '30%'
+                     width: '30%',
+                     display:'inline-block',
+                     alignItems:'center'
                  }}>
                 <input type="search" id="searchBar" placeholder="Search..." aria-label="Search input" value={searchText}
                        onChange={(e) => setSearchText(e.target.value)}/>
@@ -74,15 +77,14 @@ function Header(props) {
                 </button>
             </div>
 
-
-            <div className="button-container">
-                <button onClick={switchLanguage} aria-label="Change language">
-                    <GrLanguage/>
+            <div className="button-container" style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
+                <button onClick={switchLanguage} aria-label="Change language" style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
+                    <GrLanguage style={{marginRight:'5px'}}/>
                     {currentLanguage === 'English' ? 'French' : 'Kazakh'}
                 </button>
 
                 <button onClick={() => alert("Notifications feature isn't implemented yet.")}
-                        aria-label="Notifications">
+                        aria-label="Notifications" >
                     <IoIosNotificationsOutline size={30} style={{marginRight: '5px'}}/>
                 </button>
 
@@ -90,6 +92,7 @@ function Header(props) {
                     <IoMdContact size={30} style={{marginRight: '20px'}}/>
                 </button>
             </div>
+
         </header>
     );
 }
@@ -118,28 +121,44 @@ function Sidebar(props) {
                     aria-hidden={!isSidebarOpen}
                     tabIndex="0">
 
-                    <div className="Logo" style={{display: 'flex'}}>
-                       <Link to="/" style={{display:"flex"}}><img src={img} width={30} height={30} style={{backgroundColor: "#F7F7FC", borderRadius:'4.8px'}}
-                             alt="Synaptix logo"/><h1 style={{marginLeft: '0.5rem'}}>Synaptix</h1></Link>
+                    <div className="Logo" style={{display: 'flex', marginTop: '5px'}}>
+                        <button onClick={() => window.location.href = '/'}
+                                style={{
+                                    display: "flex",
+                                    background: 'none',
+                                    border: 'none',
+                                    cursor: 'pointer',
+                                    outline: 'none'
+                                }}>
+                            <img src={img} width={30} height={30}
+                                 style={{backgroundColor: "initial", borderRadius: '4.8px'}}
+                                 alt="Synaptix logo"/>
+                            <h1 style={{marginLeft: '0.5rem'}}>Synaptix</h1>
+                        </button>
+
                     </div>
                     <ul>
-                        <li>
-                            <Link to="/Dashboard" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><IoSpeedometerOutline size={20} /> Dashboard</Link>
+                        <li style={{display: "flex", marginTop: '40px'}}>
+                            <Link to="/Dashboard" onClick={toggleSidebar} style={{
+                                fontFamily: 'SF Pro Text',
+                                display: 'inline-flex',
+                                alignItems: 'center'
+                            }}><IoSpeedometerOutline size={20} style={{marginRight: '10px'}}/> Dashboard</Link>
                         </li>
                         <li>
-                            <Link to="/MyCourse" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><AiOutlineDatabase size={20}/> My Courses</Link>
+                            <Link to="/mycourse" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><AiOutlineDatabase size={20} style={{marginRight: '10px'}}/> My Courses</Link>
                         </li>
                         <li>
-                            <Link to="/statistics" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><BsGraphUp size={20}/> Statistics</Link>
+                            <Link to="/statistics" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><BsGraphUp size={20} style={{marginRight: '10px'}}/> Statistics</Link>
                         </li>
                         <li>
-                            <Link to="/calendar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><CiCalendar size={20}/> Calendar</Link>
+                            <Link to="/calendar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><CiCalendar size={20} style={{marginRight: '10px'}}/> Calendar</Link>
                         </li>
                         <li>
-                            <Link to="/webinar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><BsCameraVideo size={20}/> Webinar</Link>
+                            <Link to="/webinar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><BsCameraVideo size={20} style={{marginRight: '10px'}}/> Webinar</Link>
                         </li>
                         <li>
-                            <Link to="/settings" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text'}}><CiSettings size={20}/> Settings</Link>
+                            <Link to="/settings" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><CiSettings size={20} style={{marginRight: '10px'}}/> Settings</Link>
                         </li>
 
                     </ul>
@@ -147,12 +166,13 @@ function Sidebar(props) {
 
                 <main id="mainContent">
                     <Switch>
-                        <Route path="/CreateCourse" component={CreateCourse}/>
-                        <Route path="/Dashboard" component={Dashboard}/>
-                        <Route path="/MyCourse" component={MyCourse}/>
-                        <Route path="/AddHomework" component={AddHomework}/>
-                        <Route path="/AddTest" component={AddTest}/>
-                        <Route path="/PreviewTest" component={PreviewTest}/>
+                        <Route path="/createcourse" component={CreateCourse}/>
+                        <Route path="/dashboard" component={Dashboard}/>
+                        <Route path="/mycourse" component={MyCourse}/>
+                        <Route path="/addhomework" component={AddHomework}/>
+                        <Route path="/addlecture" component={AddLecture}/>
+                        <Route path="/addtest" component={AddTest}/>
+                        <Route path="/previewtest" component={PreviewTest}/>
 
                     </Switch>
                 </main>

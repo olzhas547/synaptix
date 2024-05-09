@@ -37,7 +37,6 @@ import NotFound from "./views/main/not-found.js";
 // import chat from "./views/chat/chat";
 // import certificate from "./views/certificate/certificate";
 // import upcomingwebinars from "./views/webinarst/upcomingwebinars";
-import howto from "./views/webinarst/howto";
 import CreateCourse from "./views/teacher/mycourses/CreateCourse";
 import Sidebar from "./views/teacher/Sidebar/Sidebar";
 import MyCourse from "./views/teacher/mycourses/MyCourse";
@@ -46,6 +45,11 @@ import Main from "./views/main/Main";
 import AddTest from "./views/teacher/mycourses/AddTest";
 import AddHomework from "./views/teacher/mycourses/AddHomework";
 import PreviewTest from "./views/teacher/mycourses/PreviewTest";
+import SidebarStud from "./views/student/StudentSidebar/SidebarStud";
+import DashboardStud from "./views/student/DashStud/DashboardStud";
+import MyCourseStud from "./views/student/MyCourseStud/MyCourseStud";
+import WebinarStud from "./views/student/WebinarStud/WebinarStud";
+import AddLecture from "./views/teacher/mycourses/AddLecture";
 
 const App = () => {
     return (
@@ -58,8 +62,6 @@ const App = () => {
         //     <Route component={Sidebar} exact path="/Sidebar" />
         //     <Route component={CreateCourse} exact path="/CreateCourse" />
         //     <Route component={Dashboard} exact path="/Dashboard" />
-        //
-        //
         //     {/*<Route component={Explore} exact path="/explore" />*/}
         //     {/*<Route component={uxui} exact path="/uxui" />*/}
         //     {/*<Route component={About} exact path="/about" />*/}
@@ -91,46 +93,70 @@ const App = () => {
         <Router>
             <Switch>
                 <Route component={Main} exact path="/"/>
-                {/*<Route component={MAINPAGE} exact path="/"/>*/}
-
                 <Route component={Signup} exact path="/signup"/>
                 <Route component={Signin} exact path="/signin"/>
-                <Route component={Sidebar} exact path={"/Sidebar"}/>
+                <Route component={Sidebar} exact path={"/sidebar"}/>
+                <Route component={SidebarStud} exact path={"/sidebarstud"}/>
 
 
-                <Route path="/Dashboard">
+                <Route path="/dashboard">
                     <Sidebar>
                         <Dashboard/>
                     </Sidebar>
                 </Route>
 
-                <Route path="/CreateCourse">
+                <Route path="/createcourse">
                     <Sidebar>
                         <CreateCourse/>
                     </Sidebar>
                 </Route>
 
-                <Route path="/MyCourse">
+                <Route path="/mycourse">
                     <Sidebar>
                         <MyCourse/>
                     </Sidebar>
                 </Route>
 
-                <Route path="/AddHomework">
+                <Route path="/addhomework">
                     <Sidebar>
                         <AddHomework/>
                     </Sidebar>
                 </Route>
-                <Route path="/AddTest">
+
+                <Route path="/addlecture">
+                    <Sidebar>
+                        <AddLecture/>
+                    </Sidebar>
+                </Route>
+
+                <Route path="/addtest">
                     <Sidebar>
                         <AddTest/>
                     </Sidebar>
                 </Route>
 
-                <Route path="/PreviewTest">
+                <Route path="/previewtest">
                     <Sidebar>
                         <PreviewTest/>
                     </Sidebar>
+                </Route>
+
+                <Route path="/dashboardstud">
+                    <SidebarStud>
+                        <DashboardStud/>
+                    </SidebarStud>
+                </Route>
+
+                <Route path="/mycoursestud">
+                    <SidebarStud>
+                        <MyCourseStud/>
+                    </SidebarStud>
+                </Route>
+
+                <Route path="/webianerstud">
+                    <SidebarStud>
+                        <WebinarStud/>
+                    </SidebarStud>
                 </Route>
 
 

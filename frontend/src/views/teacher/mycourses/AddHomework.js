@@ -14,7 +14,6 @@ const AddHomework = (props) => {
         event.preventDefault();
 
         const formData = new FormData();
-
         formData.append('courseName1', form.courseName1);
         formData.append('courseName2', form.courseName2);
         formData.append('description', form.editorState.getCurrentContent().getPlainText(''));
@@ -28,7 +27,6 @@ const AddHomework = (props) => {
                     'Content-Type': 'multipart/form-data'
                 }
             });
-
             console.log(response.data);
         } catch (err) {
             console.error(err);
@@ -50,7 +48,6 @@ const AddHomework = (props) => {
     const videoInputRef = useRef(); // Declare videoInputRef
 
 
-
     const handleChange = (event) => {
         setForm({...form, [event.target.name]: event.target.value});
     };
@@ -70,7 +67,6 @@ const AddHomework = (props) => {
     const handleClick = () => {
         videoInputRef.current.click();
     }
-
 
 
     const toggleToolbar = () => {
@@ -159,7 +155,7 @@ const AddHomework = (props) => {
                                 }
                             </div>
 
-                            <div className="date-input-container" style={{marginLeft:'-20px'}}>
+                            <div className="date-input-container" style={{marginLeft: '-20px'}}>
                                 <label htmlFor="dateOfOpen">Date of Open</label>
                                 <input
                                     type="date"
@@ -177,9 +173,11 @@ const AddHomework = (props) => {
                         </div>
                     </div>
                     <div className="AddHomework-button"
-                         style={{width: '257.83px', height: '118.59px', marginLeft: '5%', backgroundColor: 'white'}}>
-                        <Link to="/AddTest"><button>Add test</button></Link>
-                        <button>Add another homework</button>
+                         style={{width: '257.83px', height: '75.59px', marginLeft: '5%', backgroundColor: 'white'}}>
+                        <Link to="/addtest">
+                            <button>Add test</button>
+                        </Link>
+                        {/*<button>Add another homework</button>*/}
                     </div>
                 </div>
             </div>

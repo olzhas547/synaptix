@@ -1,23 +1,25 @@
 import React from 'react';
-import './Footer.css'
 
 function Footer() {
     return (
-        <div className="Footer-container">
+        <footer style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            padding: '1rem',
+            width:'1440px'
 
-            <div className="foot-content">
-                <h5>About</h5>
-                <h5>Careers</h5>
-                <h5>Blog</h5>
-                <h5>Terms & Conditions</h5>
+        }}>
+            <div className="footer_a" style={{width:'600px', display:'flex', justifyContent:'space-between'}}>
+            <a href="/about" style={{ textDecoration: 'none'}}>About</a>
+            <a href="/careers" style={{ textDecoration: 'none'}}>Careers</a>
+            <a href="/blog" style={{ textDecoration: 'none'}}>Blog</a>
+            <a href="/terms" style={{ textDecoration: 'none'}}>Terms & Conditions</a>
             </div>
 
-            <div className="foot-logo">
-                <h4>© 2024 Synaptix</h4>
-            </div>
-
-        </div>
-    );
+            <span style={{textAlign:"left"}}>© 2024 Synaptix</span>
+        </footer>
+    )
+        ;
 }
 
 export default Footer;

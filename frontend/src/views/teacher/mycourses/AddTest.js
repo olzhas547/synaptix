@@ -107,15 +107,12 @@ function AddTest() {
         };
 
         // Send data to backend
-        axios.post('YOUR_BACKEND_API_ENDPOINT', testData)
-            .then(response => {
-                // Handle successful response
+        axios.post('YOUR_BACKEND_API_ENDPOINT', testData).then(response => {
                 if (res) {
                     setErr(null)
                     console.log('Test saved successfully:', response.data);
                     navitgate.push('/PreviewTest')
                 }
-
             })
             .catch(error => {
                 if (err) {
@@ -128,7 +125,9 @@ function AddTest() {
         <div className="add-test-screen">
             <div className="title-bar">
                 <h2>Add Test</h2>
-                <Link to="/PreviewTest"><button>Preview test</button></Link>
+                <Link to="/previewtest">
+                    <button>Preview test</button>
+                </Link>
             </div>
 
             <div className="test-inside">
@@ -193,7 +192,7 @@ function AddTest() {
                                             aria-label={`Content editing for answer ${answerIndex + 1} of question ${questionIndex + 1}`}
                                             aria-roledescription="text editor"
                                         />
-                                          <button
+                                        <button
                                             onClick={() => setCorrectAnswerFor(questionIndex, answerIndex)}
                                             role="button"
                                             aria-label={`Mark as correct answer`}

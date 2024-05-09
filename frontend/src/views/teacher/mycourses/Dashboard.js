@@ -30,7 +30,7 @@ const Dashboard = () => {
         };
 
         try {
-            const response = await axios.post("https://example.com/api/courses", course);
+            const response = await axios.post("", course);
             console.log("Course created:", response.data);
             fetchData(); // Reload courses
         } catch (error) {
@@ -54,19 +54,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h1 id="dashboard-heading">Courses Dashboard</h1>
-            {courses.length > 0
-                ? <ul aria-labelledby="dashboard-heading">
-                    {courses.map((course) => (
-                        <li key={course.id}>{course.name}</li>
-                    ))}
-                </ul>
-                : <p>No courses available.</p>
-            }
-
-            <form onSubmit={handleSubmit}>
-                <h2>Create a new Course</h2>
-            </form>
+ррр
         </div>
     );
 };

@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 
 class UserBase(BaseModel):
@@ -29,14 +30,19 @@ class CourseCreate(BaseModel):
     language: str
     price: int
     thumbnail: str
+    teacher_id: int
+    description: str
+    skills: str
+    requirements: str
+    level: str
+    mentor: bool
+    paid: bool
+    thumbnail: str
+    certificate: str
 
 class CourseBase(CourseCreate):
-    category: str | None
-    time: datetime | None
-    description: str | None
-    #includes: str | None
-    certificate: str | None
-    start_date: datetime | None
+    time: Optional[datetime] = None
+    start_date: Optional[datetime] = None
 
 class Course(CourseBase):
     id: int
@@ -49,6 +55,16 @@ class HomeworkCreate(BaseModel):
     course_id: int
 
 class Homework(HomeworkCreate):
+    id: int
+
+class LectureCreate(BaseModel):
+    name: str
+    description: str
+    video_link: str | None
+    open_date: datetime
+    course_id: int
+
+class Lecture(LectureCreate):
     id: int
 
 class CourseReview(BaseModel):

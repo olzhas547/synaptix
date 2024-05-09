@@ -28,7 +28,7 @@ const MAINPAGE = (props) => {
           <span style={{color:'white'}}>Home</span>
         </Link>
         <Link to="/mycourses" className="mainpage-text006 link">
-          <span style={{color:'white'}}>Courses</span>
+          <span style="color:'white'">Courses</span>
         </Link>
         <Link to="/" className="mainpage-text008 link">
           <span style={{color:'white'}}>Our Feature</span>

@@ -28,7 +28,6 @@ input[type="text"],
 input[type="number"],
 select {
     width: 100%;
-
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -61,7 +60,6 @@ select {
     justify-content: space-between;
     padding: 5px;
     border: 1px solid #ccc;
-
 }
 
 .toolbarClassName.open {
@@ -74,7 +72,6 @@ select {
 .wrapperClassName {
     margin-top: 10px;
     border: 1px solid rgb(231, 221, 221);
-
 }
 
 .editorClassName {

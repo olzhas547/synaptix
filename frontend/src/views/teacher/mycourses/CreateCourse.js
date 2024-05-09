@@ -8,19 +8,72 @@ import './CreateCourse.css';
 import ImageUse from "./ImageUse";
 import {Link} from "react-router-dom";
 import {DropzoneComponent1, DropzoneComponent2} from "./DropzoneComponent";
+import axios from "axios";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+
 
 const CreateCourse = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isPaid, setIsPaid] = useState(true);
-
     const [price, setPrice] = useState(1000);
     const [currency, setCurrency] = useState('USD');
+    const [isMentor, setIsMentor] = useState(false);
+    const [activeStep, setActiveStep] = useState(0);
+    const [submitting, setSubmitting] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [files, setFiles] = useState([]);
+
+    const handleMentorToggle = () => {
+        setIsMentor(current => !current);
+    };
+
+
+    const { getRootProps, getInputProps, isDragActive } = useDropzone({
+        onDrop: useCallback((acceptedFiles) => {
+            setFiles(prevFiles => [...prevFiles, ...acceptedFiles]);
+            acceptedFiles.forEach(file => {
+                console.log(file);
+            });
+        }, []),
+        noKeyboard: true
+    });
+
+    const steps = [
+        { title: 'Tab 1: Course Info', content: 'Course Info' },
+        { title: 'Tab 2: Course module', content: 'Course Module' },
+        { title: 'Tab 3: Finish', content: 'Finish' },
+    ];
+
+    const handleChange = (e) => {
+        const { name, value, files } = e.target;
+        if (name === 'thumbnail') {
+            setSelectedImage(URL.createObjectURL(files[0]));
+        } else if (files) {
+            setForm({ ...form, certificate: files[0] });
+        } else {
+            setForm({ ...form, [name]: value });
+        }
+    };
+
+    const handleNext = () => {
+        if (activeStep < steps.length - 1) setActiveStep(prevActiveStep => prevActiveStep + 1);
+    };
+
+    const progress = useSpring({
+        from: { width: '0%' },
+        to: { width: `${((activeStep + 1) / steps.length) * 100}%` },
+    });
+
+    useEffect(() => {
+        document.title = steps[activeStep].title;
+    }, [activeStep]);
+
+
 
 
     const handleClick = () => {
         setIsOpen(!isOpen);
     };
-    const [isMentor, setIsMentor] = useState(false);
 
 
     const onDrop = useCallback((acceptedFiles) => {
@@ -42,67 +95,39 @@ const CreateCourse = () => {
         certificate: null,
 
     });
-
-    const [selectedImage, setSelectedImage] = useState(null);
-
-
-    const [activeStep, setActiveStep] = useState(0);
-
-    const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop, noKeyboard: true});
-
-    const [files, setFiles] = useState([]);
-
-    const steps = [
-        {title: 'Tab 1: Course Info', content: 'Course Info',},
-        {title: 'Tab 2: Course module', content: 'Course Module'},
-        {title: 'Tab 3: Finish', content: 'Finish'},
-    ];
+    const validateForm = () => {
+        let errors = {};
+        if (!form.courseName) {
+            errors.courseName = 'Course name is required';
+        }
+        return errors;
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
+        setSubmitting(true);
         const formData = new FormData();
-        Object.keys(form).forEach((key) => {
+        Object.keys(form).forEach(key => {
             formData.append(key, form[key]);
+
         });
 
         try {
-            const response = await axios.post('https://your-api-endpoint.com/path', formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                },
-            });
-
-            console.log(response.data);
+            console.log(formData)
+            const response = await axios.post('http://localhost:8000/api/create_course', formData);
+            console.log('Response:', response.data);
         } catch (error) {
             console.error('There was an error!', error);
+        } finally {
+            setSubmitting(false);
         }
     };
+
 
     useEffect(() => {
         document.title = steps[activeStep].title;
     }, [activeStep]);
 
-
-    const handleChange = (e) => {
-        const {name, value, files} = e.target;
-        if (name === 'thumbnail') {
-            setSelectedImage(URL.createObjectURL(files[0]));
-        } else if (files) {
-            setForm({...form, certificate: files[0]});
-        } else {
-            setForm({...form, [name]: value});
-        }
-    }
-
-    const handleNext = () => {
-        if (activeStep < steps.length - 1) setActiveStep(activeStep + 1);
-    }
-
-    const progress = useSpring({
-        from: {width: '0%'},
-        to: {width: `${((activeStep + 1) / steps.length) * 100}%`},
-    });
 
     return (
         <div className="Form-All">
@@ -115,7 +140,7 @@ const CreateCourse = () => {
             </Stepper>
 
             {activeStep === 0 && (
-                <form>
+                <form onClick={handleSubmit}>
                     <div className='first_form'>
                         <h2>Course Info</h2>
                         <div className="form-group">
@@ -133,8 +158,6 @@ const CreateCourse = () => {
                             />
                         </div>
 
-
-                        <DropzoneComponent1/>
 
                         <div className="form-group">
                             <label htmlFor="description">Description:</label>
@@ -179,9 +202,12 @@ const CreateCourse = () => {
                         <div className="form-group">
                             <label htmlFor="courseLevel">Level of course:</label>
                             <select id="courseLanguage" name="courseLanguage">
-                                <option value="English">Beginner</option>
-                                <option value="Spanish">Spanish</option>
-                                <option value="French">French</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Elementary">Elementary</option>
+                                <option value="PreIntermediate">Pre Intermediate</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="UpperIntermediate">Upper Intermediate</option>
+                                <option value="Advanced">Advanced</option>
                             </select>
                         </div>
 
@@ -196,26 +222,24 @@ const CreateCourse = () => {
 
                         <h5 style={{paddingTop: "10px", fontSize: '20px', fontWeight: 'normal'}}>Mentor</h5>
                         <div className={"toggle-switch " + (isMentor ? 'mentor-active' : '')}>
-
                             <input
                                 type="checkbox"
                                 id="mentor"
                                 name="isMentor"
                                 checked={isMentor}
-                                onChange={() => setIsMentor(!isMentor)}
+                                onChange={handleMentorToggle}
                                 className="toggle-switch-checkbox"
                                 aria-checked={isMentor}
                                 aria-labelledby='mentorHeader'
                                 role='switch'
                             />
-
                             <label className="toggle-switch-label" htmlFor="mentor">
                                 <span className="toggle-switch-inner"></span>
                                 <span className="toggle-switch-switch"></span>
                             </label>
-                            <h6 style={{marginTop: '50px', width: '200px', display: 'flex', color: 'silver'}}>Is this
-                                course will be with
-                                mentor?</h6>
+                            <h6 style={{marginTop: '50px', width: '200px', display: 'flex', color: 'silver'}}>
+                                Is this course will be with mentor?
+                            </h6>
                         </div>
 
                         <div className="course-pricing">
@@ -228,7 +252,7 @@ const CreateCourse = () => {
                                         checked={!isPaid}
                                         onChange={() => {
                                             setIsPaid(false);
-                                            setPrice(''); // clear the input field when "Free" is selected
+                                            setPrice('');
                                         }}
                                     />
                                     Free
@@ -268,20 +292,14 @@ const CreateCourse = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className="last-dropzone">
-                            <label>Certificate</label>
-                            <DropzoneComponent2/>
-                        </div>
-                        <div className="Creating-button">
-                            <animated.div style={{...progress, backgroundColor: '#007BFF'}}
-                                          aria-label="form progress"/>
-                            {activeStep === steps.length - 1 ?
-                                <button type="submit" aria-label="Submit the Form">Submit</button> :
-                                <button aria-label="Next Step" onClick={handleNext}>Next</button>
-                            }
-                        </div>
-                        {/* rest of your form fields... */}
 
+                        <div className="Creating-button">
+                            {activeStep === steps.length - 1 ? (
+                                <button type="submit" disabled={submitting}>
+                                    {submitting ? 'Submitting...' : 'Submit'}
+                                </button>
+                            ) : (<button aria-label="Next Step" onClick={handleNext}>Next</button>)}
+                        </div>
                     </div>
                 </form>
             )}
@@ -291,32 +309,35 @@ const CreateCourse = () => {
                     <div className="second_form">
                         {/*<ImageUse/>*/}
                         <div className="CourseModule-title">
-                            <h2>Course modules</h2>
+                            <h2 style={{textAlign: 'center', marginTop: '10px', fontSize: '30px'}}>Course modules</h2>
                         </div>
 
 
                         <div className="Lecture-container">
+
                             <div className="Lecture-up">
-                                <h1 className="Lecture-title" style={{fontSize: "30px"}}>Lectures</h1>
-                                <Link to="">
+                                <h1 className="Lecture-title" style={{fontSize: "20px"}}>Lectures</h1>
+                                <Link to='/addlecture'>
                                     <button>Add Lecture</button>
                                 </Link>
                             </div>
-                            <div className="Lecture-image">
-                                <ImageUse/>
-                            </div>
+                            {/*<div className="Lecture-image">*/}
+                            {/*    <ImageUse/>*/}
+                            {/*</div>*/}
 
                         </div>
 
                         <div className="Homework-container">
                             <div className="Homework-up">
-                                <h1 className="Homework-title" style={{fontSize: "30px"}}>Homeworks</h1>
-                                <Link to="addhomework"><button>Add Homework</button></Link>
+                                <h1 className="Homework-title" style={{fontSize: "20px"}}>Homeworks</h1>
+                                <Link to="/addhomework">
+                                    <button>Add Homework</button>
+                                </Link>
                             </div>
 
-                            <div className="Homework-image">
-                                <ImageUse/>
-                            </div>
+                            {/*<div className="Homework-image">*/}
+                            {/*    <ImageUse/>*/}
+                            {/*</div>*/}
 
                         </div>
 
@@ -335,23 +356,18 @@ const CreateCourse = () => {
             {activeStep === 2 && (
                 <form>
                     <div className="third_form">
-                        <h2>Choose Image</h2>
-                        <input
-                            type="file"
-                            id="thumbnail"
-                            name="thumbnail"
-                            accept="image/*"
-                            onChange={handleChange}
-                            aria-label="Choose an Image"
-                        />
-                        {selectedImage && <img src={selectedImage} alt="Selected Image"/>}
-
-                        <div className="Creating-button">
-                            <animated.div style={{...progress, backgroundColor: '#007BFF'}} aria-label="form progress"/>
-                            {activeStep === steps.length - 1 ?
-                                <button type="submit" aria-label="Submit the Form">Submit</button> :
-                                <button aria-label="Next Step" onClick={handleNext}>Next</button>
-                            }
+                        <div className="steps">
+                            <IoIosCheckmarkCircleOutline size={90} style={{backgroundColor:'green', color:'white', borderRadius:'50%', border:''}}/>
+                            <div className="steps-title">
+                                <h2>You just created the course!</h2>
+                            </div>
+                            <div className="steps-text">
+                                <p style={{color:'silver'}}>Objectively scale orthogonal collaboration and idea-sharing after enterprise-wide manufactured products.
+                                    Compellingly strategize high-quality niche markets through sustainable.</p>
+                            </div>
+                            <Link to="/dashboard">
+                                <button style={{marginTop:'50px',width:'200px', height:'50px',borderRadius:'10px', border:'#0056b3 1px solid', backgroundColor:'#0056b3', color:'white', cursor:'pointer'}}>To the Dashboards</button>
+                            </Link>
                         </div>
                     </div>
                 </form>

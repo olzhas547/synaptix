@@ -9,7 +9,7 @@ function Signup() {
         fullName: '',
         username: '',
         email: '',
-        role: 'teacher',
+        role: '',
         password: '',
         confirmPassword: '',
     });
@@ -19,12 +19,16 @@ function Signup() {
             ...formData,
             [event.target.name]: event.target.value,
         });
+        console.log(formData)
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/login', formData);
+            const form_data = new FormData()
+            form_data.append("username", formData['email'])
+            form_data.append("password", formData['password'])
+            const response = await axios.post('http://localhost:8000/api/sign-up', formData);
             console.log(response.data);
         } catch (error) {
             console.error('Error:', error);
@@ -41,7 +45,7 @@ function Signup() {
                 <div className="signup-loan1"></div>
                 <div className="signup-form">
                     <span className="signup-text Heading02">
-                        <button style={{ width: '50%' }}>Create your account</button>
+                        <button style={{ width: '50%', backgroundColor:'initial' }}>Create your account</button>
                     </span>
                     <form onSubmit={handleSubmit}>
                         <div className="signup-fullname">
@@ -66,7 +70,7 @@ function Signup() {
                                 className="signup-input-field02"
                                 value={formData.lastName}
                                 onChange={handleChange}
-                            />
+                            style={{width:"48%"}}/>
                         </div>
                         <div className="signup-input-field03">
                             <span className="signup-text04 BodyMedium400">
@@ -95,26 +99,26 @@ function Signup() {
                             />
                         </div>
                         <div className="signup-input-field07">
-                            <span className="signup-text08 BodyMedium400">
+                            <span className="signup-text08 BodyMedium400" style={{borderRadius:'6px'}}>
                                 <span>Choose your role:</span>
                             </span>
-                            <div className="signup-input-field08">
+                            <div className="signup-input-field08" style={{borderRadius:'6px'}}>
                                 <select
                                     name="role"
                                     value={formData.role}
                                     onChange={handleChange}
                                     className="signup-text10 BodyLarge400"
-                                    style={{ width: '90%' }}>
-                                    <option value="teacher">Teacher</option>
+                                    style={{ width: '100%'}}>
+                                    <option value="teacher" >Teacher</option>
                                     <option value="student">Student</option>
                                 </select>
                             </div>
                         </div>
                         <div className="signup-password">
                             <div className="signup-input-field09">
-                                <label className="signup-text12 BodyMedium400">
+                                <label className="signup-text12 BodyMedium400" style={{borderRadius:'6px'}}>
                                     Password
-                                    <div className="signup-input-field10">
+                                    <div className="signup-input-field10" style={{borderRadius:'6px'}}>
                                         <input
                                             type="password"
                                             name="password"
@@ -123,14 +127,14 @@ function Signup() {
                                             onChange={handleChange}
                                             className="signup-text14 BodyLarge400"
                                             aria-label="Create password"
-                                        />
+                                       style={{borderRadius:'6px'}} />
                                     </div>
                                 </label>
                             </div>
                             <div className="signup-input-field11">
-                                <label className="signup-text16 BodyMedium400">
+                                <label className="signup-text16 BodyMedium400" style={{borderRadius:'6px'}}>
                                     Confirm Password
-                                    <div className="signup-input-field12">
+                                    <div className="signup-input-field12" style={{borderRadius:'6px'}}>
                                         <input
                                             type="password"
                                             name="confirmPassword"
@@ -139,15 +143,15 @@ function Signup() {
                                             onChange={handleChange}
                                             className="signup-text18 BodyLarge400"
                                             aria-label="Confirm password"
-                                        />
+                                            style={{borderRadius:'6px'}} />
                                     </div>
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" className="signup-buttons">
+                        <button type="submit" onClick={handleSubmit} className="signup-buttons">
 
                             <span className="signup-text20 ButtonM">
-                                <Link to='/CreateCourse'><span style={{ cursor: 'pointer' }}>Create account →</span></Link>
+                                <Link to='/mycoursestud'><span style={{ cursor: 'pointer' }}>Create account →</span></Link>
                             </span>
                             <div className="signup-arrow-right"></div>
 
@@ -156,7 +160,7 @@ function Signup() {
                 </div>
             </div>
 
-            <Link to="/" className="signup-buttons1">
+            <Link to="/signin" className="signup-buttons1">
                 <span className="signup-text22 ButtonM">
                     <span>Log in</span>
                 </span>

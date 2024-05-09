@@ -56,7 +56,6 @@ button[aria-label="Search"] {
 }
 
 nav[role="navigation"] {
-
     width: 200px;
     transition: transform 0.3s ease;
     transform: translateX(-100%);
@@ -149,7 +148,6 @@ main {
     background-color: #BAE0FF;
     border-radius: 5px;
     width: 150px;
-
 }
 
 .sidebar main {

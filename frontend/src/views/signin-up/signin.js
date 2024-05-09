@@ -11,9 +11,9 @@ function Signin() {
     password: '',
   });
   const headers = {
-      'accept': 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded'
-    };
+    'accept': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded'
+  };
   const handleChange = (event) => {
     setFormData({
       ...formData,
@@ -34,6 +34,7 @@ function Signin() {
       console.error(error);
     }
   };
+
 
   return (
       <div className="signin-container">
@@ -58,7 +59,7 @@ function Signin() {
                       placeholder="Username or email address..."
                       className="signin-input-field1"
                       name="email"
-                      value={formData.username}
+                      value={formData.email}
                       onChange={handleChange}
                       id="signin-input-email"
                       tabIndex="0"
@@ -82,8 +83,8 @@ function Signin() {
               </div>
 
               <div className="signin-btn">
-                <Link to='/MyCourse'>
-                  <button type="submit" onClick={handleSubmit} style={{color:"white"}} className="signin-buttons1" tabIndex="0">
+                <Link to='/mycourse'>
+                  <button type="submit" style={{color:"white"}} className="signin-buttons1" tabIndex="0" onClick={handleSubmit}>
                     Sign In →
                   </button>
                 </Link>
@@ -92,7 +93,7 @@ function Signin() {
           </div>
           {/* ... */}
           <img
-              src="/external/rectangle66345718-3df8-700w.png"
+              src="/external/rectangle66345718-3df8-700w.png" style={{width:'30%', height:'100%'}}
               alt="Rectangle66345718"
               className="signup-rectangle6634"
           />
