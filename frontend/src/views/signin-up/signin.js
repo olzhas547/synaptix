@@ -10,10 +10,6 @@ function Signin() {
     email: '',
     password: '',
   });
-  const headers = {
-    'accept': 'application/json',
-    'Content-Type': 'application/x-www-form-urlencoded'
-  };
   const handleChange = (event) => {
     setFormData({
       ...formData,
@@ -27,23 +23,37 @@ function Signin() {
       const form_data = new FormData()
       form_data.append("username", formData['email'])
       form_data.append("password", formData['password'])
-      const response = await axios.post('http://localhost:8000/api/login', form_data, headers);
+      const response = await axios.post('http://localhost:8000/api/login', form_data);
       Cookies.set("token", response.data.access_token);
-      console.log(response.data.access_token);
+      console.log(response.data.access_token)
+      if (response.data.role === 'teacher') {
+          <Link to="/mycourse"></Link>
+      } else if (response.data.role === 'student') {
+        <Link to="/mycoursestud"></Link>
+      } else {
+
+      }
     } catch (error) {
       console.error(error);
     }
   };
 
 
+
+
   return (
       <div className="signin-container">
+
         <Helmet>
           <title>Sign In</title>
           <meta property="og:title" content="Sign In"/>
+
         </Helmet>
+
         <div className="signin-signin">
+
           {/* ... */}
+
           <div className="signin-form" role="form" aria-label="Sign in form">
             <h1 className="signin-text04 Heading02">
               Sign in to your account
@@ -83,11 +93,9 @@ function Signin() {
               </div>
 
               <div className="signin-btn">
-                <Link to='/mycourse'>
-                  <button type="submit" style={{color:"white"}} className="signin-buttons1" tabIndex="0" onClick={handleSubmit}>
-                    Sign In →
-                  </button>
-                </Link>
+
+                <Link to='/mycourse'><button onClick={handleSubmit} style={{ cursor: 'pointer', width:'150px', height:'40px', border:'1px solid silver', borderRadius:'5px', backgroundColor:'#1677FF', color:'white'}}><span>Sign in</span></button></Link>
+
               </div>
             </form>
           </div>

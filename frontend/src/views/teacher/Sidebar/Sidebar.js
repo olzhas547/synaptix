@@ -63,7 +63,7 @@ function Header(props) {
                      border: "1px solid silver",
                      borderRadius: "5px",
                      width: '30%',
-                     display:'inline-block',
+                     display:'inline-flex',
                      alignItems:'center'
                  }}>
                 <input type="search" id="searchBar" placeholder="Search..." aria-label="Search input" value={searchText}
@@ -77,19 +77,34 @@ function Header(props) {
                 </button>
             </div>
 
-            <div className="button-container" style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
-                <button onClick={switchLanguage} aria-label="Change language" style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
-                    <GrLanguage style={{marginRight:'5px'}}/>
+            <div className="button-container"
+                 style={{fontFamily: 'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
+                <button onClick={switchLanguage} aria-label="Change language"
+                        style={{fontFamily: 'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}>
+                    <GrLanguage style={{marginRight: '5px'}}/>
                     {currentLanguage === 'English' ? 'French' : 'Kazakh'}
                 </button>
 
                 <button onClick={() => alert("Notifications feature isn't implemented yet.")}
-                        aria-label="Notifications" >
+                        aria-label="Notifications">
                     <IoIosNotificationsOutline size={30} style={{marginRight: '5px'}}/>
                 </button>
 
                 <button onClick={() => alert("Viewing account isn't implemented yet.")} aria-label="Account">
-                    <IoMdContact size={30} style={{marginRight: '20px'}}/>
+                    <IoMdContact size={30} style={{marginRight: '5px'}}/>
+                </button>
+
+                <button onClick={() => window.location.href = '/signin'}
+                        style={{
+                            display: "inline-flex",
+                            background: 'none',
+                            cursor: 'pointer',
+                            alignItems: 'center',
+                            fontFamily: 'SF Pro Text',
+                            color: 'rgba(0, 122, 255, 1)',
+
+                        }}>
+                    <h3>Log out</h3>
                 </button>
             </div>
 

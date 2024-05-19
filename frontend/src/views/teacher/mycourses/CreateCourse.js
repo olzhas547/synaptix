@@ -10,22 +10,31 @@ import {Link} from "react-router-dom";
 import {DropzoneComponent1, DropzoneComponent2} from "./DropzoneComponent";
 import axios from "axios";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-
+import Cookies from "js-cookie";
 
 const CreateCourse = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isPaid, setIsPaid] = useState(true);
-    const [price, setPrice] = useState(1000);
+    const [price, setPrice] = useState(0);
     const [currency, setCurrency] = useState('USD');
     const [isMentor, setIsMentor] = useState(false);
     const [activeStep, setActiveStep] = useState(0);
     const [submitting, setSubmitting] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [files, setFiles] = useState([]);
-
-    const handleMentorToggle = () => {
-        setIsMentor(current => !current);
-    };
+    const [form, setForm] = useState({
+        courseName: '',
+        description: '',
+        thumbnail: '',
+        studentLearning: '',
+        courseRequirements: '',
+        courseLevel: 'Beginner',
+        courseLanguage: 'English',
+        coursePrice: 'paid',
+        coursePriceCost: 0,
+        certificate: null,
+        isMentor: 'false',
+    });
 
 
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -48,6 +57,7 @@ const CreateCourse = () => {
         const { name, value, files } = e.target;
         if (name === 'thumbnail') {
             setSelectedImage(URL.createObjectURL(files[0]));
+            setForm({ ...form, [name]: files[0] });
         } else if (files) {
             setForm({ ...form, certificate: files[0] });
         } else {
@@ -56,7 +66,8 @@ const CreateCourse = () => {
     };
 
     const handleNext = () => {
-        if (activeStep < steps.length - 1) setActiveStep(prevActiveStep => prevActiveStep + 1);
+        if (activeStep < steps.length - 1) 
+          setActiveStep(prevActiveStep => prevActiveStep + 1);
     };
 
     const progress = useSpring({
@@ -67,8 +78,6 @@ const CreateCourse = () => {
     useEffect(() => {
         document.title = steps[activeStep].title;
     }, [activeStep]);
-
-
 
 
     const handleClick = () => {
@@ -83,18 +92,7 @@ const CreateCourse = () => {
         });
     }, []);
 
-    const [form, setForm] = useState({
-        courseName: '',
-        description: '',
-        thumbnail: '',
-        studentLearning: '',
-        courseRequirements: '',
-        courseLevel: '',
-        courseLanguage: '',
-        coursePrice: 'free',
-        certificate: null,
 
-    });
     const validateForm = () => {
         let errors = {};
         if (!form.courseName) {
@@ -107,22 +105,55 @@ const CreateCourse = () => {
         event.preventDefault();
         setSubmitting(true);
         const formData = new FormData();
-        Object.keys(form).forEach(key => {
+        for (const key in form){
             formData.append(key, form[key]);
-
-        });
-
-        try {
-            console.log(formData)
-            const response = await axios.post('http://localhost:8000/api/create_course', formData);
-            console.log('Response:', response.data);
-        } catch (error) {
-            console.error('There was an error!', error);
-        } finally {
-            setSubmitting(false);
         }
+
+            try {
+                console.log(formData)
+                axios.defaults.headers = {Authorization: "Bearer " + Cookies.get("token")}
+                const response = await axios.post('http://localhost:8000/api/create_course', formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                });
+                console.log('Response:', response.data);
+            } catch (error) {
+                console.error('There was an error!', error);
+            } finally {
+                setSubmitting(false);
+            }
     };
 
+    const handleOnClick = async (event) => {
+        handleSubmit(event);
+        handleNext();
+    };
+    
+
+    
+    const handleMentorToggle = () => {
+        setIsMentor(current => {
+            const newState = !current;
+            const mentorSwitch = document.getElementById('mentor');
+            if (mentorSwitch) {
+                mentorSwitch.setAttribute('aria-checked', newState);
+                if (mentorSwitch.getAttribute('value') === 'false') {
+                    mentorSwitch.setAttribute('value', 'true');
+                    setIsMentor(true);
+                } else {
+                    mentorSwitch.setAttribute('value', 'false');
+                    setIsMentor(false);
+                }
+            }
+            return newState;
+        });
+    };
+    
+    const handleOnClickMentor = (e) => {
+        handleChange(e);
+        handleMentorToggle();
+    }
 
     useEffect(() => {
         document.title = steps[activeStep].title;
@@ -140,8 +171,8 @@ const CreateCourse = () => {
             </Stepper>
 
             {activeStep === 0 && (
-                <form onClick={handleSubmit}>
-                    <div className='first_form'>
+                <form>
+                    <div className='first_form' >
                         <h2>Course Info</h2>
                         <div className="form-group">
                             <label htmlFor="courseName">Course Name:</label>
@@ -199,7 +230,7 @@ const CreateCourse = () => {
                             />
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group" onChange={handleChange}>
                             <label htmlFor="courseLevel">Level of course:</label>
                             <select id="courseLanguage" name="courseLanguage">
                                 <option value="Beginner">Beginner</option>
@@ -211,12 +242,14 @@ const CreateCourse = () => {
                             </select>
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group" onChange={handleChange}>
                             <label htmlFor="courseLanguage">Language of course:</label>
                             <select id="courseLanguage" name="courseLanguage">
                                 <option value="English">English</option>
                                 <option value="Spanish">Spanish</option>
                                 <option value="French">French</option>
+                                <option value="Kazakh">Kazakh</option>
+                                <option value="Russian">Russian</option>
                             </select>
                         </div>
 
@@ -227,11 +260,12 @@ const CreateCourse = () => {
                                 id="mentor"
                                 name="isMentor"
                                 checked={isMentor}
-                                onChange={handleMentorToggle}
+                                onChange={handleOnClickMentor}
                                 className="toggle-switch-checkbox"
                                 aria-checked={isMentor}
                                 aria-labelledby='mentorHeader'
                                 role='switch'
+                                value={form.isMentor}
                             />
                             <label className="toggle-switch-label" htmlFor="mentor">
                                 <span className="toggle-switch-inner"></span>
@@ -277,28 +311,29 @@ const CreateCourse = () => {
                                     id="course-price"
                                     value={price}
                                     onChange={(e) => setPrice(e.target.value)}
-                                    disabled={!isPaid} // disable the input field when "Free" is selected
+                                    disabled={!isPaid}
+
                                 />
                                 <select
                                     value={currency}
                                     onChange={(e) => setCurrency(e.target.value)}
-                                    disabled={!isPaid} // disable the select field when "Free" is selected
+                                    disabled={!isPaid}
                                 >
                                     <option value="USD">$</option>
                                     <option value="EUR">€</option>
                                     <option value="JPY">¥</option>
                                     <option value="ТГ">Т</option>
-                                    {/* Add more currencies as needed */}
+                                  
                                 </select>
                             </div>
                         </div>
 
                         <div className="Creating-button">
                             {activeStep === steps.length - 1 ? (
-                                <button type="submit" disabled={submitting}>
+                                <button type="submit" disabled={submitting} onClick={handleSubmit} aria-label={submitting ? 'Submitting...' : 'Submit'}>
                                     {submitting ? 'Submitting...' : 'Submit'}
                                 </button>
-                            ) : (<button aria-label="Next Step" onClick={handleNext}>Next</button>)}
+                            ) : (<button aria-label="Next Step" type="button" onClick={handleOnClick}>Next</button>)}
                         </div>
                     </div>
                 </form>

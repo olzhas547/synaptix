@@ -73,3 +73,6 @@ class CourseReview(BaseModel):
     stars: int
     text: str
     course_id: int
+
+class LessonCreate(BaseModel):
+    pass
