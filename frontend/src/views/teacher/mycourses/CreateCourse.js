@@ -30,10 +30,12 @@ const CreateCourse = () => {
         courseRequirements: '',
         courseLevel: 'Beginner',
         courseLanguage: 'English',
-        coursePrice: 'paid',
+        coursePrice: true,
         coursePriceCost: 0,
         certificate: null,
         isMentor: 'false',
+        teacher_id: 0,
+        skills: ''
     });
 
 
@@ -111,11 +113,14 @@ const CreateCourse = () => {
 
             try {
                 console.log(formData)
-                axios.defaults.headers = {Authorization: "Bearer " + Cookies.get("token")}
-                const response = await axios.post('http://localhost:8000/api/create_course', formData, {
-                    headers: {
-                        'Content-Type': 'multipart/form-data'
-                    }
+                axios.defaults.headers = {Authorization: "Bearer " + Cookies.get("token"),}
+                var object = {};
+                formData.forEach(function(value, key){
+                    object[key] = value;
+                });
+                var json = JSON.stringify(object);
+                const response = await axios.post('http://localhost:8000/api/create_course', object, {
+                    'Content-Type': 'application/json',
                 });
                 console.log('Response:', response.data);
             } catch (error) {

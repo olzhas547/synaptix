@@ -131,17 +131,17 @@ def read_root(current_user: model.UserBase = Depends(get_current_user)):
 def create_course(course: model.CourseCreate, db: Session() = Depends(get_db), user = Depends(get_current_user)):
     user = db.query(users.User).filter(users.User.email == user.email).first()
     db_course = users.Course(
-        name=course.name, 
+        name=course.courseName, 
         teacher_id=user.id, 
-        price=course.price, 
-        language=course.language, 
+        price=course.coursePriceCost, 
+        language=course.courseLanguage, 
         thumbnail=course.thumbnail,
         description = course.description,
         skills = course.skills,
-        requirements = course.requirements,
-        level = course.level,
-        mentor = course.mentor,
-        paid = course.paid,
+        requirements = course.courseRequirements,
+        level = course.courseLevel,
+        mentor = course.isMentor,
+        paid = course.coursePrice,
         certificate = course.certificate
         )
     #db_course = users.Course(name=course.name, priced=course.priced, category=course.category, time=course.time, description=course.description, includes=course.includes, certificate=course.certificate, start_date=course.start_date)

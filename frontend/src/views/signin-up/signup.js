@@ -9,7 +9,7 @@ function Signup() {
         fullName: '',
         username: '',
         email: '',
-        role: '',
+        role: 'teacher',
         password: '',
         confirmPassword: '',
     });
@@ -30,6 +30,7 @@ function Signup() {
             form_data.append("password", formData['password'])
             const response = await axios.post('http://localhost:8000/api/sign-up', formData);
             console.log(response.data);
+            history.push('/dashboard');
         } catch (error) {
             console.error('Error:', error);
         }

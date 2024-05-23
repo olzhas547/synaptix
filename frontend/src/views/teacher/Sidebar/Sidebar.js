@@ -28,17 +28,25 @@ import AddLecture from "../mycourses/AddLecture";
 function Header(props) {
     const [currentLanguage, setCurrentLanguage] = useState('English');
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
+
     const switchLanguage = () => {
         const newLanguage = currentLanguage === 'English' ? 'French' : 'Kazakh';
         setCurrentLanguage(newLanguage);
         alert(`Switched language to ${newLanguage.toUpperCase()}`);
     };
 
+
     const [searchText, setSearchText] = useState('');
 
     const searchHandler = async () => {
         try {
-            const response = await axios.post('YOUR_URL', {
+            const response = await axios.post('', {
                 search: searchText
             });
             console.log(response.data);
@@ -90,22 +98,39 @@ function Header(props) {
                     <IoIosNotificationsOutline size={30} style={{marginRight: '5px'}}/>
                 </button>
 
-                <button onClick={() => alert("Viewing account isn't implemented yet.")} aria-label="Account">
-                    <IoMdContact size={30} style={{marginRight: '5px'}}/>
-                </button>
+                <div className='account_header'>
+                    <button onClick={toggleDropdown} aria-haspopup="true" aria-expanded={isOpen} aria-label="Account"
+                            style={{display: 'flex', alignItems: 'center'}}>
+                        <IoMdContact size={30} style={{marginRight: '5px'}}/>
+                    </button>
+                    {isOpen && (
+                        <ul aria-label="Account options"
+                            style={{listStyle: 'none', position: 'absolute', width:'200px',height:'150px', borderRadius:'10px'}}>
+                            <li>
+                                <button onClick={() => alert("Profile viewing isn't implemented yet.")}>View Profile</button>
+                            </li>
+                            <li>
+                                <button onClick={() => alert("Settings isn't implemented yet.")}>Settings</button>
+                            </li>
+                            <li>
+                                <button onClick={() => window.location.href = '/signin'}>Logout</button>
+                            </li>
+                        </ul>
+                    )}
+                </div>
 
-                <button onClick={() => window.location.href = '/signin'}
-                        style={{
-                            display: "inline-flex",
-                            background: 'none',
-                            cursor: 'pointer',
-                            alignItems: 'center',
-                            fontFamily: 'SF Pro Text',
-                            color: 'rgba(0, 122, 255, 1)',
+                {/*<button onClick={() => window.location.href = '/signin'}*/}
+                {/*        style={{*/}
+                {/*            display: "inline-flex",*/}
+                {/*            background: 'none',*/}
+                {/*            cursor: 'pointer',*/}
+                {/*            alignItems: 'center',*/}
+                {/*            fontFamily: 'SF Pro Text',*/}
+                {/*            color: 'rgba(0, 122, 255, 1)',*/}
 
-                        }}>
-                    <h3>Log out</h3>
-                </button>
+                {/*        }}>*/}
+                {/*    <h3>Log out</h3>*/}
+                {/*</button>*/}
             </div>
 
         </header>
@@ -188,7 +213,6 @@ function Sidebar(props) {
                         <Route path="/addlecture" component={AddLecture}/>
                         <Route path="/addtest" component={AddTest}/>
                         <Route path="/previewtest" component={PreviewTest}/>
-
                     </Switch>
                 </main>
                 <Footer/>

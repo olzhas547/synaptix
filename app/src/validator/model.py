@@ -26,19 +26,18 @@ class TokenData(BaseModel):
     email: str | None
 
 class CourseCreate(BaseModel):
-    name: str
-    language: str
-    price: int
+    courseName: str
+    courseLanguage: str
+    coursePriceCost: int
     thumbnail: str
-    teacher_id: int
+    teacher_id: int | None
     description: str
-    skills: str
-    requirements: str
-    level: str
-    mentor: bool
-    paid: bool
-    thumbnail: str
-    certificate: str
+    skills: str | None
+    courseRequirements: str
+    courseLevel: str
+    isMentor: bool
+    coursePrice: bool
+    certificate: str | None
 
 class CourseBase(CourseCreate):
     time: Optional[datetime] = None

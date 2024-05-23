@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 import axios from 'axios';
 import './signin.css';
 import Cookies from "js-cookie";
+import { Link, useHistory } from 'react-router-dom';
 
 function Signin() {
+  
+  const history = useHistory();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -26,10 +28,12 @@ function Signin() {
       const response = await axios.post('http://localhost:8000/api/login', form_data);
       Cookies.set("token", response.data.access_token);
       console.log(response.data.access_token)
+      console.log(response.data.role)
       if (response.data.role === 'teacher') {
-          <Link to="/mycourse"></Link>
+      
+          history.push('/mycourse');
       } else if (response.data.role === 'student') {
-        <Link to="/mycoursestud"></Link>
+        history.push('/mycoursestud');
       } else {
 
       }
