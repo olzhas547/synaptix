@@ -153,7 +153,26 @@ def create_course(course: model.CourseCreate, db: Session() = Depends(get_db), u
 @router.get('/courses_list', response_model=list[model.Course])
 def get_courses(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
     result = db.query(users.Course).offset(skip).limit(limit).all()
-    return result
+    print(result[0].__dict__)
+    outputs = []
+    for i in result:
+        output = model.Course(
+            courseName = i.name,
+            courseLanguage = i.language,
+            coursePriceCost = i.price,
+            thumbnail = i.thumbnail,
+            teacher_id = i.teacher_id,
+            description = i.description,
+            skills = i.skills,
+            courseRequirements = i.requirements,
+            courseLevel = i.level,
+            isMentor = i.mentor,
+            coursePrice = i.paid,
+            certificate = i.certificate,
+            id = i.id
+        )
+        outputs.append(output)
+    return outputs
 
 @router.get('/course/{id}')
 def get_course(id: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
