@@ -104,8 +104,8 @@ function Header(props) {
                         <IoMdContact size={30} style={{marginRight: '5px'}}/>
                     </button>
                     {isOpen && (
-                        <ul aria-label="Account options"
-                            style={{listStyle: 'none', position: 'absolute', width:'200px',height:'150px', borderRadius:'10px'}}>
+                        <ul aria-label="Account_options"
+                            style={{listStyle: 'none', position: 'absolute', width:'200px',height:'150px', borderRadius:'10px', }}>
                             <li>
                                 <button onClick={() => alert("Profile viewing isn't implemented yet.")}>View Profile</button>
                             </li>

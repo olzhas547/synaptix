@@ -14,7 +14,7 @@ import Cookies from "js-cookie";
 
 const CreateCourse = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isPaid, setIsPaid] = useState(true);
+    const [isPaid, setIsPaid] = useState(false);
     const [price, setPrice] = useState(0);
     const [currency, setCurrency] = useState('USD');
     const [isMentor, setIsMentor] = useState(false);
@@ -30,7 +30,7 @@ const CreateCourse = () => {
         courseRequirements: '',
         courseLevel: 'Beginner',
         courseLanguage: 'English',
-        coursePrice: true,
+        coursePrice: false,
         coursePriceCost: 0,
         certificate: null,
         isMentor: 'false',
@@ -134,22 +134,16 @@ const CreateCourse = () => {
         handleSubmit(event);
         handleNext();
     };
-    
 
-    
+
     const handleMentorToggle = () => {
         setIsMentor(current => {
             const newState = !current;
             const mentorSwitch = document.getElementById('mentor');
             if (mentorSwitch) {
-                mentorSwitch.setAttribute('aria-checked', newState);
-                if (mentorSwitch.getAttribute('value') === 'false') {
-                    mentorSwitch.setAttribute('value', 'true');
-                    setIsMentor(true);
-                } else {
-                    mentorSwitch.setAttribute('value', 'false');
-                    setIsMentor(false);
-                }
+                mentorSwitch.setAttribute('aria-checked', newState.toString());
+                mentorSwitch.setAttribute('value', newState.toString());
+                mentorSwitch.checked = newState;
             }
             return newState;
         });
@@ -270,7 +264,7 @@ const CreateCourse = () => {
                                 aria-checked={isMentor}
                                 aria-labelledby='mentorHeader'
                                 role='switch'
-                                value={form.isMentor}
+
                             />
                             <label className="toggle-switch-label" htmlFor="mentor">
                                 <span className="toggle-switch-inner"></span>
@@ -328,7 +322,7 @@ const CreateCourse = () => {
                                     <option value="EUR">€</option>
                                     <option value="JPY">¥</option>
                                     <option value="ТГ">Т</option>
-                                  
+
                                 </select>
                             </div>
                         </div>

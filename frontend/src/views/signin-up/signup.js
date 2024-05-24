@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import './signup.css';
-
 function Signup() {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -152,7 +151,7 @@ function Signup() {
                         <button type="submit" onClick={handleSubmit} className="signup-buttons">
 
                             <span className="signup-text20 ButtonM">
-                                <Link to='/mycoursestud'><span style={{ cursor: 'pointer' }}>Create account →</span></Link>
+                                <Link to='/signin'><span style={{ cursor: 'pointer' }}>Create account →</span></Link>
                             </span>
                             <div className="signup-arrow-right"></div>
 

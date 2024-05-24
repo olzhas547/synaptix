@@ -193,5 +193,41 @@ header button[aria-label="Search"]:hover {
     padding: 1%;
 }
 
+/*account  button*/
+ul[aria-label="Account_options"] {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    /*background-color: #f0f0f0; !* Background color *!*/
+    background-color: rgba(0, 0, 0, 0.98);
+    padding: 10px; /* Add some padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 5%;
+}
+
+ul[aria-label="Account_options"] li {
+    margin-bottom: 10px; /* Add space between list items */
+
+}
+
+ul[aria-label="Account_options"] li button {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    /*background-color: #007bff; !* Button color *!*/
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+ul[aria-label="Account_options"] li button:hover {
+    background-color: rgba(249, 250, 251, 0.31); /* Darker color on hover */
+}
 
 
+/**/
