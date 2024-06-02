@@ -1,7 +1,6 @@
 import hashlib
 import random
 import string
-#from hashing import Hash
 from fastapi import (
     APIRouter, HTTPException, Depends, Request, Response, status
 )
@@ -31,10 +30,10 @@ def get_db():
     finally:
         db.close()
 
-def get_random_string(length: int=12) -> str: #TESTED
+def get_random_string(length: int=12) -> str:
     return "".join(random.choice(string.ascii_letters) for _ in range(length))
 
-def hash_password(password: str, salt: str = None): #TESTED
+def hash_password(password: str, salt: str = None):
     if salt is None:
         salt = get_random_string()
     enc = hashlib.pbkdf2_hmac(
@@ -77,7 +76,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
     )
     return verify_token(token,credentials_exception)
 
-def validate_password(password: str, hashed_password: str) -> bool: #TESTED
+def validate_password(password: str, hashed_password: str) -> bool:
     salt, hashed = hashed_password.split("$")
     return hash_password(password, salt) == hashed
 
@@ -112,8 +111,13 @@ def get_users(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
     return result
 
 @router.post('/login')
-def login(request: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    user = db.query(users.User).filter(users.User.email == request.username).first()
+def login(
+        request: OAuth2PasswordRequestForm = Depends(), 
+        db: Session = Depends(get_db)
+    ):
+    user = db.query(users.User).filter(
+        users.User.email == request.username
+    ).first()
     if not user:
        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
     if not validate_password(
@@ -121,14 +125,22 @@ def login(request: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(
     ):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
     access_token = create_access_token(data={"sub": user.email})
-    return {"access_token": access_token, "token_type": "bearer", "role": user.role}
+    return {
+        "access_token": access_token, 
+        "token_type": "bearer", 
+        "role": user.role
+    }
 
 @router.get("/current_user")
 def read_root(current_user: model.UserBase = Depends(get_current_user)):
 	return current_user
 
 @router.post('/create_course')
-def create_course(course: model.CourseCreate, db: Session() = Depends(get_db), user = Depends(get_current_user)):
+def create_course(
+        course: model.CourseCreate,
+        db: Session() = Depends(get_db),
+        user = Depends(get_current_user)
+    ):
     user = db.query(users.User).filter(users.User.email == user.email).first()
     db_course = users.Course(
         name=course.courseName, 
@@ -144,16 +156,19 @@ def create_course(course: model.CourseCreate, db: Session() = Depends(get_db), u
         paid = course.coursePrice,
         certificate = course.certificate
         )
-    #db_course = users.Course(name=course.name, priced=course.priced, category=course.category, time=course.time, description=course.description, includes=course.includes, certificate=course.certificate, start_date=course.start_date)
+    
     db.add(db_course)
     db.commit()
     db.refresh(db_course)
     return db_course
 
 @router.get('/courses_list', response_model=list[model.Course])
-def get_courses(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
+def get_courses(
+        db: Session = Depends(get_db), 
+        skip: int = 0, 
+        limit: int = 100
+    ):
     result = db.query(users.Course).offset(skip).limit(limit).all()
-    print(result[0].__dict__)
     outputs = []
     for i in result:
         output = model.Course(
@@ -175,7 +190,11 @@ def get_courses(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
     return outputs
 
 @router.get('/course/{id}')
-def get_course(id: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
+def get_course(
+        id: int,
+        db: Session = Depends(get_db),
+        user = Depends(get_current_user)
+    ):
     result = db.query(users.Course).filter(users.Course.id == id).first()
     return result
 
@@ -183,27 +202,80 @@ def get_course(id: int, db: Session = Depends(get_db), user = Depends(get_curren
 
 
 @router.post('/create_lecture')
-def create_lecture(course: model.LessonCreate, db: Session() = Depends(get_db), user = Depends(get_current_user)):
+def create_lecture(
+        lecture: model.LectureCreate, 
+        db: Session() = Depends(get_db), 
+        user = Depends(get_current_user)
+    ):
     user = db.query(users.User).filter(users.User.email == user.email).first()
-    db_course = users.Course(
-        name=course.name, 
-        teacher_id=user.id, 
-        price=course.price, 
-        language=course.language, 
-        thumbnail=course.thumbnail,
-        description = course.description,
-        skills = course.skills,
-        requirements = course.requirements,
-        level = course.level,
-        mentor = course.mentor,
-        paid = course.paid,
-        certificate = course.certificate
-        )
-    db.add(db_course)
+    db_lecture = users.Lecture(
+        name=lecture.name,
+        description=lecture.description,
+        video_link=lecture.video_link,
+        open_date=lecture.open_date,
+        course_id=lecture.course_id
+    )
+    db.add(db_lecture)
     db.commit()
-    db.refresh(db_course)
-    return db_course
+    db.refresh(db_lecture)
+    return db_lecture
 
+@router.get('/lectures_list')
+def lectures_list(
+        db: Session() = Depends(get_db), 
+        skip: int = 0,
+        limit: int = 100
+    ):
+    result = db.query(users.Lecture).offset(skip).limit(limit).all()
+    return result
+
+@router.get('/lecture/{id}')
+def get_lecture(
+        id: int,
+        db: Session = Depends(get_db),
+        user = Depends(get_current_user)
+    ):
+    result = db.query(users.Lecture).filter(users.Lecture.id == id).first()
+    return result
+
+@router.post('/create_homework')
+def create_homework(
+        homework: model.HomeworkCreate, 
+        db: Session() = Depends(get_db), 
+        user = Depends(get_current_user)
+    ):
+    user = db.query(users.User).filter(users.User.email == user.email).first()
+    db_homework = users.Homework(
+        name=homework.name,
+        description=homework.description,
+        video_link=homework.video_link,
+        open_date=homework.open_date,
+        course_id=homework.course_id
+        )
+    db.add(db_homework)
+    db.commit()
+    db.refresh(db_homework)
+    return db_homework
+
+@router.get('/homeworks_list')
+def homework_list(
+        db: Session() = Depends(get_db), 
+        skip: int = 0,
+        limit: int = 100
+    ):
+    result = db.query(users.Homework).offset(skip).limit(limit).all()
+    return result
+
+@router.get('/homework/{id}')
+def get_homework(
+        id: int,
+        db: Session = Depends(get_db),
+        user = Depends(get_current_user)
+    ):
+    result = db.query(users.Homework).filter(users.Homework.id == id).first()
+    return result
+
+'''
 @router.post('/create_test')
 def create_test(course: model.LessonCreate, db: Session() = Depends(get_db), user = Depends(get_current_user)):
     user = db.query(users.User).filter(users.User.email == user.email).first()
@@ -226,25 +298,5 @@ def create_test(course: model.LessonCreate, db: Session() = Depends(get_db), use
     db.refresh(db_course)
     return db_course
 
-@router.post('/create_homework')
-def create_homework(course: model.HomeworkCreate, db: Session() = Depends(get_db), user = Depends(get_current_user)):
-    user = db.query(users.User).filter(users.User.email == user.email).first()
-    db_course = users.Course(
-        name=course.name, 
-        teacher_id=user.id, 
-        price=course.price, 
-        language=course.language, 
-        thumbnail=course.thumbnail,
-        description = course.description,
-        skills = course.skills,
-        requirements = course.requirements,
-        level = course.level,
-        mentor = course.mentor,
-        paid = course.paid,
-        certificate = course.certificate
-        )
-    #db_course = users.Course(name=course.name, priced=course.priced, category=course.category, time=course.time, description=course.description, includes=course.includes, certificate=course.certificate, start_date=course.start_date)
-    db.add(db_course)
-    db.commit()
-    db.refresh(db_course)
-    return db_course
+
+'''

@@ -108,5 +108,15 @@ class Message(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     time = Column(DateTime)
     chat_id = Column(Integer, ForeignKey("chats.id"))
+
+class Lecture(Base):
+    __tablename__ = 'lectures'
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    description = Column(String)
+    video_link = Column(String)
+    open_date = Column(DateTime)
+    course_id = Column(Integer, ForeignKey('courses.id'))
     
 Base.metadata.create_all(engine)
