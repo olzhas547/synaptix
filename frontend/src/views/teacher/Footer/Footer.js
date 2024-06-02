@@ -6,7 +6,7 @@ function Footer() {
             display: 'flex',
             justifyContent: 'space-between',
             padding: '2rem 100px',
-            width:'100%'
+            width:'100%',
         }}>
 
             <div className="footer_a" style={{width:'600px', display:'flex', justifyContent:'space-between'}}>

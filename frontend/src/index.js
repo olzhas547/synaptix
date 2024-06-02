@@ -50,6 +50,8 @@ import DashboardStud from "./views/student/DashStud/DashboardStud";
 import MyCourseStud from "./views/student/MyCourseStud/MyCourseStud";
 import WebinarStud from "./views/student/WebinarStud/WebinarStud";
 import AddLecture from "./views/teacher/mycourses/AddLecture";
+import Explore from "./views/teacher/mycourses/Explore";
+import Pagination from "./views/teacher/NumberOfPages/Pagination";
 
 const App = () => {
     return (
@@ -97,6 +99,8 @@ const App = () => {
                 <Route component={Signin} exact path="/signin"/>
                 <Route component={Sidebar} exact path={"/sidebar"}/>
                 <Route component={SidebarStud} exact path={"/sidebarstud"}/>
+                <Route component={Pagination} exact path={"/pagination"}/>
+
 
 
                 <Route path="/dashboard">
@@ -135,6 +139,12 @@ const App = () => {
                     </Sidebar>
                 </Route>
 
+                <Route path="/explore">
+                    <Sidebar>
+                        <Explore/>
+                    </Sidebar>
+                </Route>
+
                 <Route path="/previewtest">
                     <Sidebar>
                         <PreviewTest/>
@@ -158,6 +168,8 @@ const App = () => {
                         <WebinarStud/>
                     </SidebarStud>
                 </Route>
+
+
 
 
                 <Route component={NotFound} path="**"/>

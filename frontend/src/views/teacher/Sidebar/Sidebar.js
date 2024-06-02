@@ -24,6 +24,9 @@ import AddTest from "../mycourses/AddTest";
 import AddHomework from "../mycourses/AddHomework";
 import PreviewTest from "../mycourses/PreviewTest";
 import AddLecture from "../mycourses/AddLecture";
+import Explore from "../mycourses/Explore";
+import { IoIosSearch } from "react-icons/io";
+
 
 function Header(props) {
     const [currentLanguage, setCurrentLanguage] = useState('English');
@@ -192,7 +195,10 @@ function Sidebar(props) {
                             <Link to="/statistics" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><BsGraphUp size={20} style={{marginRight: '10px'}}/> Statistics</Link>
                         </li>
                         <li>
-                            <Link to="/calendar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><CiCalendar size={20} style={{marginRight: '10px'}}/> Calendar</Link>
+                            <Link to="/explore" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><IoIosSearch size={20} style={{marginRight: '10px'}}/> Explore</Link>
+                        </li>
+                        <li>
+                            <Link to="/calendar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><CiCalendar size={20} style={{marginRight: '10px'}}/> Calendar </Link>
                         </li>
                         <li>
                             <Link to="/webinar" onClick={toggleSidebar} style={{fontFamily:'SF Pro Text', display: 'inline-flex', alignItems: 'center'}}><BsCameraVideo size={20} style={{marginRight: '10px'}}/> Webinar</Link>
@@ -206,6 +212,7 @@ function Sidebar(props) {
 
                 <main id="mainContent">
                     <Switch>
+                        <Route path="/explore" component={Explore}/>
                         <Route path="/createcourse" component={CreateCourse}/>
                         <Route path="/dashboard" component={Dashboard}/>
                         <Route path="/mycourse" component={MyCourse}/>
